@@ -7,6 +7,8 @@ import Recruiters from './components/Recruiters/Recruiters';
 import SearchInput from './components/SearchInput/SearchInput';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import SignUp from './components/SignUp/SignUp';
+import Dashboard from './components/Pages/Dashboard';
+import Error from './components/Pages/Error';
 
 
 function App() {
@@ -43,7 +45,13 @@ function App() {
         {login && <SignInPopUp closePopUp={closePopUp} openSignUpPopUp={openSignUpPopUp} />}
         {signup && <SignUp closePopUp={closePopUp} openSignInPopUp={openSignInPopUp} />}
         <Routes>
-          <Route path='/' element={<Home/>}/>
+          <Route exact path='/' element={<Home/>}/>
+        </Routes>
+        <Routes>
+          <Route exact path='/dashboard' element={<Dashboard/>}/>
+        </Routes>
+        <Routes>
+          <Route exact path='*' element={<Error/>}/>
         </Routes>
       </Router>
     </div>
