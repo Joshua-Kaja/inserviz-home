@@ -1,0 +1,176 @@
+.recruiters_container{
+    margin:7rem 5rem 3rem 5rem;
+}
+
+.recruiters_header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.recruiters_header_text{
+    display: flex;
+    flex-direction: column;
+}
+
+.recruiters_header_text h3{
+    font-size: 2.5rem;
+    font-weight: 700;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.recruiters_header_text span:nth-child(2){
+    font-size: 1.1rem;
+    font-family: 'Works sans', sans-serif;
+
+}
+
+.recruiters_arrow{
+    margin-top:3.6rem;
+}
+
+.recuiters_categories{
+    margin-top:2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap:1.5rem;
+    margin-left:0.7rem;
+    
+}
+
+.recruiters_category{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border:1px solid rgba(0,167,172,.1);
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.recruiters_category:hover{
+    border:1px solid #00a7ac;
+
+}
+
+.recruiters_img{
+    padding-top:10px;
+}
+
+.recruiters_img img{
+    border-radius: 50%;;
+}
+
+.recruiters_category_header{
+    display: flex;
+    flex-direction: row;
+    background: rgba(0,167,172,.1);
+    padding:20px 0px 20px 30px;
+    width:19.6rem;
+    
+    
+}
+
+.recuiters_link{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-top:1.6rem;
+    padding-bottom:2rem;
+    gap:4rem;
+    
+}
+
+.recuiters_details{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left:15px;
+    gap:5px;
+}
+
+.recuiters_details span:nth-child(1) {
+    font-size:1.1rem;
+    font-family: 'Exo 2', sans-serif;
+    color:#000;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.recuiters_details span:nth-child(1):hover{
+    color:#00a7ac;
+    cursor: pointer;
+}
+
+.icon_details{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.icon_details .country_text{
+    padding-left: 7px;
+}
+
+.icon_details span{
+    font-family: 'Works sans', sans-serif;
+    color:#595959;
+}
+
+.people_details{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.people_details span{
+    padding-left:7px;
+    font-family: 'Works sans', sans-serif;
+    color:#595959;
+}
+
+.link_details{
+    font-family: 'Exo 2', sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap:8px;
+}
+
+.link_details span{
+    color:#00a7ac;
+    
+}
+
+.arrow_right_recruiters{
+    position: relative;
+}
+
+.arrow_right_recruiters .arrow_right{
+    transition: left 600ms;
+    top:12px;
+    left: 17px;
+    transform: translateY(-50%);
+    scale: 0.8;
+}
+
+.arrow_circle{
+    top:4px;
+    left:-8px;
+    position: absolute;
+    transform: translateY(-50%) translateX(-50%);
+
+}
+
+.arrow_right_recruiters .arrow_right:hover{
+    left:20px;
+    cursor: pointer;
+
+}
+
+.vacancies{
+    font-family: 'Works sans', sans-serif;
+    color:#595959;
+    font-size:1.1rem;
+}

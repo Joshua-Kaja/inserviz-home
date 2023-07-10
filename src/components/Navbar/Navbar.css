@@ -1,0 +1,164 @@
+
+.nav_container{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    height:7.5rem;
+    
+}
+
+
+.img_container img{
+   margin-top:2.5rem;
+   margin-left:2rem;
+
+}
+
+.nav_top{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height:2.2rem;
+    border-bottom: 1px solid #f1f1f1;
+    padding-top:8px;
+    font-family: 'Work Sans', sans-serif;
+    padding-bottom: 10px;
+}
+
+.nav_top_details{
+    padding-left:1.6rem;
+    display: flex;
+    flex-direction: row;
+    font-size: 1rem;
+    
+}
+
+.social_platform{
+    margin-left: 30rem;
+}
+
+.top_down_navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left:2rem;
+    border-left: 1px solid #f1f1f1;
+
+}
+
+.navbar_down_container{
+    display: flex;
+    padding-top:15px;
+    padding-left: 20px;
+    font-family: 'Exo 2', sans-serif;
+    gap:1.4rem;
+
+}
+
+.Links span:hover{
+    color:#00a7ac;
+    transition: 0.3s ease-in-out;
+}
+
+
+.navbar_down_right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-left:7rem;
+    gap:1rem;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.signIn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color:#000;
+    font-family: 'Exo 2', sans-serif;
+    border: 1px solid #dfe9e5;
+    background-color: white;
+    transition: 0.5s all ease;
+    border-radius: 0.5rem;
+    padding-left:1.5rem;
+    padding-right: 1rem;
+    height:2.5rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.signIn button{
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+    background: none;
+    margin-left:3px;
+    font-family: 'Exo 2', sans-serif;
+    cursor: pointer;
+}
+
+
+.signIn:hover{
+    background-color: #00a7ac;
+}
+
+
+
+.Links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Links .btn_inprov{
+    border:0;
+    outline:0;
+    font-size: 16px;
+    background: none;
+    background-color: #00a7ac;
+    padding:12px 16px 12px 25px;
+    border-radius: 10px;
+    color:white;
+    transition: 0.5s all ease;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.Links .btn_inprov:hover{
+    background-color: black;
+    cursor: pointer;
+}
+
+
+
+.postJob_btn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transition: 0.5s all ease;
+    border:1px solid #dfe9e5;
+    background-color: #00a7ac;
+    color: white;
+    border-radius: 0.5rem;
+    height:2.5rem;
+    padding-left:1.5rem;
+    cursor: pointer;
+    padding-right: 1rem;
+
+}
+
+
+.postJob_btn:hover{
+    background-color: #000;
+    
+}
+.postJob_btn button{
+    outline: 0;
+    border: 0;
+    font-size:16px;
+    background: none;
+    color:white;
+    font-family: 'Exo 2', sans-serif;
+    cursor: pointer;
+    /* width:5rem; */
+
+}

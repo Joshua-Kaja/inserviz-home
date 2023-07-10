@@ -1,0 +1,62 @@
+.arrowIcon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:2rem;
+}
+
+
+.arrow_left{
+    position: relative;
+}
+
+.arrow_left .circle_img_left{
+    width:24px;
+    height:24px;
+
+}
+
+.arrow_img_left{
+    position: absolute;
+    top:16px;
+    transform: translateY(-50%);
+    left:5px;
+
+}
+
+.arrow_left .arrow_img_left{
+    transition: left 600ms;
+}
+
+.arrow_left .arrow_img_left:hover{
+    cursor: pointer;
+    left:-3px;
+}
+
+.arrow_right{
+    position: relative;
+}
+
+.arrow_right .circle_img_right{
+    width:24px;
+    height:24px;
+
+
+}
+
+.arrow_right .arrow_img_right{
+    transition: left 600ms;
+}
+
+.arrow_img_right{
+    top:2px;
+    left:-8px;
+    position: absolute;
+
+}
+
+.arrow_right .arrow_img_right:hover{
+    left:-3px;
+    cursor: pointer;
+
+}

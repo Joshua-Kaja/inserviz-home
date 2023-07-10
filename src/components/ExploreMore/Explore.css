@@ -1,0 +1,34 @@
+.explore{
+    display: flex;
+    flex-direction: cow;
+    align-items: center;
+    gap:16px;
+}
+
+.arrow_right{
+    position: relative;
+}
+
+.arrow_right .circle_img_right{
+    width:20px;
+    height:20px;
+
+
+}
+
+.arrow_right .arrow_img_right{
+    transition: left 600ms;
+}
+
+.arrow_img_right{
+    top:4px;
+    left:-8px;
+    position: absolute;
+
+}
+
+.arrow_right .arrow_img_right:hover{
+    left:-3px;
+    cursor: pointer;
+
+}

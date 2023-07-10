@@ -1,0 +1,150 @@
+.searchInput{
+    margin:4.5rem 4rem 5rem 9rem;
+}
+
+.search_form{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding:15px;
+
+}
+
+.searchInput_container{
+    background: white;
+    width:59.6rem;
+    border-radius: 5px;
+
+}
+
+::placeholder{
+    color:#000;
+}
+
+.input_form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:12px;
+    font-size: 0.938rem;
+    background: #eff3f2;
+    padding:20px 20px 20px 20px;
+    line-height: 1;
+    
+    border-radius: 5px;
+    border:1px solid #e9e9e9;  
+}
+
+.input_form input{
+ 
+    font-weight: 400;
+    font-family: 'Works Sans', sans-serif;
+    width:21.7rem;    
+    font-size: 0.937rem;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+    background: 0;
+}
+
+.dropdown_form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:12px;
+    border-radius: 5px;
+    padding:10px 9px 10px 20px;
+    background: #eff3f2;
+    margin-left: 20px;
+    border:1px solid #e9e9e9;
+}
+
+.dropdown_form select{
+    padding:10px;
+    width:17rem;
+    border-radius: 5px;
+    border: 0;
+    background: 0;
+    font-size:0.936rem;
+    outline: 0;
+    font-family: 'Works sans', sans-serif;
+}
+
+.dropdown_form select:hover{
+    cursor: pointer;
+}
+
+.selectOption .option{
+    font-size: 1.1rem;
+    gap:1rem;
+    font-family: 'Works sans', sans-serif;
+    background-color: rgba(0, 168, 173, 0.1);
+}
+
+.btn_search{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:12px;
+    padding: 2px 0px 2px 0px;
+    padding-left:20px;
+    background: #00a7ac;
+    margin-left: 20px;
+    width:7rem;
+    border-radius: 5px;
+    /* padding-right:7rem; */
+    transition: 0.5s all ease;
+
+}
+
+.btn_search:hover{
+    background-color:#000;
+    cursor: pointer;
+    transition: .5s all ease;
+
+}
+
+.btn_search button{
+    padding:16px 30px 16px 0px;
+    color:white;
+    border-radius: 5px;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    background: 0;
+    font-size:1.1rem;
+    font-family: 'Exo 2', sans-serif;
+}
+
+@media screen and (max-width:1080px){
+    .search_form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .searchInput{
+        margin:4.5rem 4rem 5rem 4.7rem;
+    
+    }
+    
+    .searchInput_container{
+        width:32rem;
+    }
+
+    .input_form input{
+        width: 25rem;
+    }
+
+    .dropdown_form{
+        margin-left: 0px;
+        margin-top:20px;
+    }
+    .dropdown_form select{
+        width:25.5rem;
+        
+    }
+    .btn_search{
+        margin: 1rem 20.5rem 0px 0px;
+        
+    }
+}
