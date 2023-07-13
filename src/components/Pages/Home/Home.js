@@ -75,9 +75,13 @@ function Home() {
         <div className='article'>
             <Article/>
         </div>
-        <div className='footer'>
+        <>
+        <Footer/>
+        </>
+        {/* <div className='footer'>
             <Footer/>
-        </div>
+
+        </div> */}
       
     </div>
   )
