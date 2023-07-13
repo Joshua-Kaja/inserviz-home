@@ -1,12 +1,15 @@
-import React, { useState } from "react";
-import "./App.css";
-import Navbar from "./components/Navbar/Navbar";
-import SignInPopUp from "./components/OpenPopUp/SignInPopUp";
-import Home from "./components/Pages/Home/Home";
-import Recruiters from "./components/Recruiters/Recruiters";
-import SearchInput from "./components/SearchInput/SearchInput";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import SignUp from "./components/SignUp/SignUp";
+import React ,{useState} from 'react';
+import './App.css';
+import Navbar from './components/Navbar/Navbar';
+import SignInPopUp from './components/OpenPopUp/SignInPopUp';
+import Home from './components/Pages/Home/Home';
+import Recruiters from './components/Recruiters/Recruiters';
+import SearchInput from './components/SearchInput/SearchInput';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import SignUp from './components/SignUp/SignUp';
+import Dashboard from './components/Pages/Dashboard';
+import Error from './components/Pages/Error';
+
 
 function App() {
   const [popUp, setPopUp] = useState({
@@ -14,7 +17,7 @@ function App() {
     signup: false,
   });
 
-  const { login, signup } = popUp;
+  const {login, signup} = popUp;
 
   const openSignUpPopUp = () => {
     setPopUp({
@@ -27,33 +30,30 @@ function App() {
     setPopUp({
       signup: false,
       login: true,
-    });
-  };
+    })
+  }
 
-  const closePopUp = () =>
-    setPopUp({
-      singup: false,
-      login: false,
-    });
+  const closePopUp = () => setPopUp({
+    singup: false,
+    login: false,
+  })
 
   return (
     <div className="App">
       <Router>
-        <Navbar openSignInPopUp={openSignInPopUp} />
-        {login && (
-          <SignInPopUp
-            closePopUp={closePopUp}
-            openSignUpPopUp={openSignUpPopUp}
-          />
-        )}
-        {signup && (
-          <SignUp closePopUp={closePopUp} openSignInPopUp={openSignInPopUp} />
-        )}
+        <Navbar openSignInPopUp={openSignInPopUp} openSignUpPopUp={openSignUpPopUp}/>
+        {login && <SignInPopUp closePopUp={closePopUp} openSignUpPopUp={openSignUpPopUp} />}
+        {signup && <SignUp closePopUp={closePopUp} openSignInPopUp={openSignInPopUp} />}
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route exact path='/' element={<Home/>}/>
         </Routes>
+        <Routes>
+          <Route exact path='/dashboard' element={<Dashboard/>}/>
+        </Routes>
+        {/* <Routes>
+          <Route path='*' element={<Error/>}/>
+        </Routes> */}
       </Router>
-      
     </div>
   );
 }
