@@ -12,7 +12,8 @@
 
 .searchInput_container{
     background: white;
-    width:59.6rem;
+    max-width:fit-content;
+    /* min-width: 40rem; */
     border-radius: 5px;
 
 }
@@ -39,7 +40,8 @@
  
     font-weight: 400;
     font-family: 'Works Sans', sans-serif;
-    width:21.7rem;    
+    width:23rem;    
+    /* max-width: 21rem; */
     font-size: 0.937rem;
     border-radius: 5px;
     border: 0;

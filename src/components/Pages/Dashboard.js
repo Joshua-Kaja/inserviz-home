@@ -10,8 +10,7 @@ const Dashboard = () => {
       <div className='dashboard_container'>
         <SideBar/>
         <ProfileJobs style={{backgroundColor:'none'}}/>
-      </div>
-        
+      </div>  
         <Footer/>
     </div>
     
