@@ -9,16 +9,16 @@ import { Link } from 'react-router-dom'
 const SocialLinks = () => {
     
 const SocialData = [
-    {img: facebook ,url:''},
-    {img: twitter,url:''},
-    {img: linkedIn, url:''},
-    {img:instagram,url:''},
+    {img: facebook ,url:'', id:1},
+    {img: twitter,url:'', id:2},
+    {img: linkedIn, url:'', id:3},
+    {img:instagram,url:'', id:4},
 ];
   return (
     <div className='social_links'>
     {SocialData.map((link, index)=>(
-        <div className='social_link'>
-            <Link to={'link.url'}><img src={link.img} alt=""/></Link>
+        <div className='social_link' key={link.id}>
+            <Link to={`path ${link.url}`}><img src={link.img} alt=""/></Link>
         </div>
     ))}
 

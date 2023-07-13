@@ -7,19 +7,15 @@ import personIcon from '../Pages/assets/signIn.svg'
 import post from '../Pages/assets/post.svg'
 import { Link } from 'react-router-dom'
 
-const Navbar = ({openSignInPopUp}) => {
+const Navbar = ({openSignInPopUp, openSignUpPopUp}) => {
     const [selectPost, setSelectedPost] = useState(null);
-    const [selectInprov, setSelectedInprov] = useState(null);
-    const [isToggle, setIsToggle] = useState(false);
+    const [isOpen, setIsOpen] = useState(false);
+
+    
 
     function handlePostClick(e) {
         e.preventDefault();
         setSelectedPost(selectPost);
-    };
-
-    function handleClickButton(e) {
-        e.preventDefault();
-        setSelectedInprov(selectInprov);
     };
 
   return (
@@ -47,11 +43,10 @@ const Navbar = ({openSignInPopUp}) => {
                 <div className='navbar_down_container'>
                     <div className='Links'>
                         <Link style={{textDecoration:'0', color:'#000'}} to='/'><span>Home</span></Link>
-                        <Link style={{textDecoration:'0', color:'#000'}} to='/'><span style={{paddingLeft:'3rem'}}>About Us</span></Link>
-                        <Link style={{textDecoration:'0', color:'#000'}} to='/'><span style={{paddingLeft:'3rem'}}>FAQS</span></Link>
-                        <Link style={{textDecoration:'0', color:'black'}} to="/"><span style={{paddingLeft:'3rem'}}>Contact Us</span></Link>
-                        <Link style={{textDecoration:'0', color:'#000'}} to='/'><span style={{paddingLeft:"3rem"}}></span></Link>
-                        <button className='btn_inprov' type="button" onClick={handleClickButton}>Become an Inprov</button>
+                        <Link style={{textDecoration:'0', color:'#000'}} to='/about'><span style={{paddingLeft:'3rem'}}>About Us</span></Link>
+                        <Link style={{textDecoration:'0', color:'#000'}} to='/faqs'><span style={{paddingLeft:'3rem'}}>FAQS</span></Link>
+                        <Link style={{textDecoration:'0', color:'black'}} to="/blog"><span style={{paddingLeft:'3rem'}}>Blog</span></Link>
+                        <button className='btn_inprov' type="button" onClick={ openSignUpPopUp }>Become an Inprov</button>
                     </div>
                     <div className='navbar_down_right'>
                         <Link to='/notifications'><img src={notifications} alt="" /></Link>
