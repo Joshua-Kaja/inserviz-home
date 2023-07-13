@@ -41,7 +41,7 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Navbar openSignInPopUp={openSignInPopUp} />
+        <Navbar openSignInPopUp={openSignInPopUp} openSignUpPopUp={openSignUpPopUp}/>
         {login && <SignInPopUp closePopUp={closePopUp} openSignUpPopUp={openSignUpPopUp} />}
         {signup && <SignUp closePopUp={closePopUp} openSignInPopUp={openSignInPopUp} />}
         <Routes>
@@ -50,9 +50,9 @@ function App() {
         <Routes>
           <Route exact path='/dashboard' element={<Dashboard/>}/>
         </Routes>
-        <Routes>
-          <Route exact path='*' element={<Error/>}/>
-        </Routes>
+        {/* <Routes>
+          <Route path='*' element={<Error/>}/>
+        </Routes> */}
       </Router>
     </div>
   );

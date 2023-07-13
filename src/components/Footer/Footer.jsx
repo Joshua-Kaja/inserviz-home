@@ -13,6 +13,7 @@ import instagram from '../Pages/assets/instagram.svg'
 
 const Footer = () => {
   return (
+    <div className='footer'>
     <div className='footer_container'>
         <div className='footer_categories'>
            <div className='about_container'>
@@ -69,7 +70,7 @@ const Footer = () => {
             <div className='empty' style={{marginBottom:'1.5rem'}}></div>
             <div className='copyright_footer'>
               <span>©Copyright 2023 <span style={{color:'#00a7ac', fontWeight:'500'}}>Inserviz Inc</span>{" "}</span>
-              <span>Design By <span style={{color:'#00a7ac', fontWeight:'500'}}>Daniel </span></span>
+              <span>Design By <span style={{color:'#00a7ac', fontWeight:'500'}}>Inserviz Team</span></span>
             </div>
           </div>
           <div className='footer_middle'>
@@ -101,6 +102,7 @@ const Footer = () => {
 
         </div>
 
+    </div>
     </div>
   )
 }
