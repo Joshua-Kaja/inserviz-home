@@ -13,7 +13,7 @@ const AppliedJob = () => {
 
     return(
         <>
-        <div style={{display:'flex', position:'relative', right:'50%', left:'28%', justifyContent:'center', flexDirection:'column', maxWidth:'68%'}}>
+        <div style={{display:'flex', position:'relative', justifyContent:'center', flexDirection:'column', maxwidth:'70%', marginLeft: "2rem"}}>
             <h3> Current Applied Jobs:</h3>
             <div className='scrollable-table'>
                <table className="table">
@@ -31,7 +31,7 @@ const AppliedJob = () => {
                 <tr className='tr'>
                     
                     <td className='tr-td1'>
-                        <div className='job-title-col-fscrn'>
+                        <div className='job-title-col-fscrn' >
 
                             <img className='img1' src={company} alt="" />
                             

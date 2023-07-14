@@ -1,0 +1,28 @@
+.about{
+    align-items: center;
+    background: rgba(249, 249, 249);
+    padding: 4rem;
+}
+
+.aboutUs_container{
+    align-items: center;
+}
+
+.aboutUs_container span{
+    font-size: 2rem;
+    font-weight: 550;
+    font-family: 'Exo 2', sans-serif;
+    margin-bottom: 2rem;
+    margin-left: 30rem;
+}
+
+.aboutUs_container p{
+    color: #160647;
+    font-size: 1.5rem;
+    line-height: 30px;
+    
+    margin-left: 10rem;
+    text-align: center;
+    width: 70%;
+    margin-bottom: 3.4rem;
+}

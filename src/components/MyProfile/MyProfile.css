@@ -1,0 +1,148 @@
+.my_profile{
+    padding: 5rem 0rem 4rem 2rem;
+
+}
+
+.my_profile_header{
+    background-color: #fff;
+    max-width: fit-content;
+    border-radius: 5px;
+    font-family: 'Exo 2', sans-serif;
+    padding: 0.8rem;
+    font-size: large;
+    font-weight: 550;
+
+}
+
+label {
+    font-family: 'Exo 2', sans-serif;
+}
+
+::placeholder{
+    font-family: 'Works sans', sans-serif;
+    color:#595959
+}
+
+.my_profile_header h2{
+    padding: 10px;;
+}
+
+.form_container{
+    background-color: #fff;
+    width: 51.5rem;
+    padding-bottom: 2rem;
+    margin-top: 2rem;
+
+    border-radius: 10px;
+    border-top: 4px solid rgba(0,167,172);
+}
+
+.img_input{
+    display: flex;
+    flex-direction: row;
+    border:1px solid rgba(0, 167, 172, 0.12);
+    border-radius: 5px;
+    padding:14px;
+    width: 20rem;
+    margin-top:13px;
+    gap:8px;
+}
+
+.img_input input{
+    outline: none;
+    border: none;
+    min-width:19rem;
+
+
+}
+
+.input_name{
+    display: grid;
+    grid-template-columns: repeat(2, 350px);
+    padding:3rem 3rem 2rem 3rem;
+    gap:1.6rem;
+
+}
+
+.qualification_input{
+    display: flex;
+    border:1px solid rgba(0, 167, 172, 0.12);
+    border-radius: 5px;
+    padding:14px;
+    width: 20.4rem;
+    margin-top:13px;
+    gap:8px;
+}
+
+.selectOption{
+    
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    width: 20.4rem;
+
+}
+
+.language_input{
+    display: flex;
+    border:1px solid rgba(0, 167, 172, 0.12);
+    border-radius: 5px;
+    padding:14px;
+    width: 20.4rem;
+    margin-top:13px;
+    gap:8px;
+}
+
+/* .input_txt{
+    padding:10px;
+    width: 20rem;
+} */
+
+.text_area_btn{
+    display: flex;
+    flex-direction: column;
+    padding-left: 3rem;
+}
+
+.text_button{
+    display: flex;
+    flex-direction: column;
+    margin-top:13px;
+    width: 100%;
+
+}
+
+.text_button textarea{
+    min-height: 150px;
+    border:1px solid rgba(0, 167, 172, 0.12);
+    outline: 0;
+    padding: 14px;
+    font-family: 'Works sans', sans-serif;
+}
+
+.text_button button{
+    max-width: fit-content;
+    /* padding:16px 30px 16px 0px; */
+    color:white;
+    border-radius: 5px;
+    outline: 0;
+    border: 0;
+   
+    background: 0;
+    font-size:1.1rem;
+    font-family: 'Exo 2', sans-serif;
+    
+}
+
+.btn_update{
+    padding: 14px;
+    padding-left:20px;
+    background: #00a7ac;
+    cursor: pointer;
+    width:8rem;
+    border-radius: 5px;
+    margin-top: 4rem;
+    transition: 0.5s all ease;
+}
+
+

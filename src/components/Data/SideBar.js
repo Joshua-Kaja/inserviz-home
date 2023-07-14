@@ -8,12 +8,12 @@ import settings from '../Pages/assets/settings.svg'
 import logout from '../Pages/assets/logout.svg'
 
 export  const SideBarData = [
-    {icon:dashboardIcon, name:'DashBoard', id:0},
-    {icon:profile, name:'Profile', id:1},
-    {icon:appliedJobs, name:'Applied Jobs', id:2},
-    {icon:bookmark, name:'Bookmark Jobs', id:3},
-    {icon:EditResume, name:'Edit Transcript', id:4},
-    {icon:viewResume, name:'View Transcript', id:5},
-    {icon:settings, name:'Settings', id:6},
-    {icon:logout, name:'Logout', id:7},
+    {icon:dashboardIcon, name:'DashBoard', id:1, path:'/dashboard'},
+    {icon:profile, name:'Profile', id:2, path:'/profile'},
+    {icon:appliedJobs, name:'Applied Gigs', id:3, path:'/appliedJobs'},
+    {icon:bookmark, name:'Bookmark Gigs', id:4, path:'/bookmark'},
+    {icon:EditResume, name:'Edit Transcript', id:5, path:'/editTranscript'},
+    {icon:viewResume, name:'View Transcript', id:6, path:'/viewTranscript'},
+    {icon:settings, name:'Settings', id:7, path:'/settings'},
+    {icon:logout, name:'Logout', id:8, path:'/logout'},
 ]

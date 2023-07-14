@@ -17,7 +17,7 @@ const SideBar = () => {
        {SideBarData.map((sideBar, index)=> (
             <div className={`sideBar_category ${selectedElement === 'element' ? 'selected' : ''}`}
              key={sideBar.id} onClick={() => handleElementClick('sideBar')}>
-                <Link to={`path ${sideBar.id}`} style={{textDecoration:'none'}}>
+                <Link to={sideBar.path} style={{textDecoration:'none'}}>
                    <img src={sideBar.icon} alt=""/>
                    <span style={{color:'#595959', paddingLeft:'1rem'}}>{sideBar.name}</span>
                 </Link>
