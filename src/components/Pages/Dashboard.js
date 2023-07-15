@@ -11,18 +11,12 @@ const Dashboard = () => {
     <div className='dashboard'>
       <div className='dashboard_container'>
         <SideBar/>
-
           <div className='end_dashboard_container'>
             <ProfileJobs/>
             <AppliedJob/>
           </div>
       </div>  
     <Footer/>
-
-        <ProfileJobs style={{backgroundColor:'none'}}/>
-      </div>  
-        <Footer/>
-
     </div>
     
   )
