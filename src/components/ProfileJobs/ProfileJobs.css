@@ -1,5 +1,6 @@
 .profile_Jobs{
     padding:90px 30px;
+    
 
 }
 
@@ -124,6 +125,11 @@
     font-size: 1.4rem;
     font-weight: 550;
     font-family: 'Exo 2', sans-serif;
+}
+
+.applied_Jobs{
+    padding-top:4rem;
+
 }
 
 @media screen and (max-width:768px){
