@@ -59,7 +59,7 @@
     margin-bottom: 1.5rem;;
     border-radius:5px;
     transition: 0.5s;
-    border-left: 3px solid rgba(0,167,172,.25)  ;
+    border-left: 3px solid rgba(0,167,172,.25);
 }
 
 .latestJob_category:hover{

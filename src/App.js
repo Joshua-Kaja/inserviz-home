@@ -9,6 +9,10 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import SignUp from './components/SignUp/SignUp';
 import Dashboard from './components/Pages/Dashboard';
 import Error from './components/Pages/Error';
+import MyProfile from './components/MyProfile/MyProfile';
+import MyProfileDashBoard from './components/Pages/MyProfileDashBoard/MyProfileDashBoard';
+import CurrrentlyApplied from './components/Pages/CurrentlyApplied/CurrrentlyApplied';
+import AboutUs from './components/Pages/AboutUs/AboutUs';
 
 
 function App() {
@@ -48,7 +52,16 @@ function App() {
           <Route exact path='/' element={<Home/>}/>
         </Routes>
         <Routes>
+          <Route exact path='/aboutUs' element={<AboutUs/>}/>
+        </Routes>
+        <Routes>
           <Route exact path='/dashboard' element={<Dashboard/>}/>
+        </Routes>
+        <Routes>
+          <Route exact path='/profile' element={<MyProfileDashBoard/>}/>
+        </Routes>
+        <Routes>
+          <Route exact path='/appliedJobs' element={<CurrrentlyApplied/>}/>
         </Routes>
         {/* <Routes>
           <Route path='*' element={<Error/>}/>

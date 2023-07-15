@@ -1,29 +1,38 @@
 .table{
     width: 100%;
+  
     border-spacing: 0px;
-    border-right: 1px solid;
-    border-left: 1px solid;
-    border-color:#4ac3c73f;
+    border-right: 0.8px solid;
+    border-left: 0.8px solid;
+    border-color: rgba(0,167,172,.12);
     border-radius: 10px;
-    margin-right: 8px;
+    /* margin: 0 auto; */
+
 }
+
 .scrollable-table{
-    max-height: 440px;
+    min-height: 450px;
     overflow-y: scroll;
-    margin-bottom: 180px;
+    margin-bottom: 120px;
+    
+
+}
+tbody{
+    background-color: white;
 }
 
 
 
 thead{
     background-color: #00a7ac;
-    border: 2px solid;
+    border: 0.8px solid;
     border-color: black;
 }
 th{
     color: white;
     margin: 3px;
 }
+
 .th{
     color: white;
     font-size: 14px;
@@ -34,29 +43,32 @@ th{
 
 .tr-td1{
     width: 48%;
-    border-bottom: 1px solid;
-    border-right: 1px solid;
-    border-color: #4ac3c73f;
+    border-bottom: 0.8px solid;
+    border-left:0.8px solid ;
+    border-right: 0.8px solid;
+    border-color: rgba(0,167,172,.12);;
+    
 }
 
 .tr-td{
     text-align: center;
     width: 17%;
     background-color: white;
-    border-bottom: 1px solid;
-    border-right: 1px solid;
-    border-color: #4ac3c73f;
+    border-bottom: 0.8px solid;
+    border-right: 0.8px solid;
+    border-left: 0.8px solid;
+    border-color:  rgba(0,167,172,.12);;
 }
+
 
 td{
     height: 85px;
 }
 .td-last1, .td-last2, .td-last3,.td-last4, .td-last5 {
-    width: 18%;
-    border-bottom: 1px solid;
+    width: 40%;
+    border-bottom: 0.8px solid;
     border-color: #4ac3c73f;
     text-align: center;
-
 }
 
 td a{
@@ -76,18 +88,21 @@ td a{
     margin-left: 14px;
     margin-top: 5px;
     
+    
 }
 
 .job-detail-fscrn{
     display: flex;
     flex-direction: column;
     margin-left: 6px;
+    
 }
 
 .job-position-fscrn{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-top: 1rem;
     margin-bottom: 5px;
 }
 
@@ -97,7 +112,6 @@ td a{
 
 :hover.job-position-fscrn a{
     color: #00a7ac;
-    border: 1px solid;
 }
 
 .job-position-fscrn div{

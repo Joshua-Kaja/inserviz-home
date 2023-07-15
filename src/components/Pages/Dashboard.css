@@ -1,12 +1,21 @@
-.dashboard{
+/* .dashboard{
     background: rgba(249, 249, 249);
-}
+} */
 
 .dashboard_container{
     display: flex;
+    background: rgba(249, 249, 249);
     /* flex-wrap: wrap; */
     flex-direction: row;
    
+}
+
+.end_dashboard_container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow-y: scroll;
+    
 }
 
 @media screen and (max-width:1080px){

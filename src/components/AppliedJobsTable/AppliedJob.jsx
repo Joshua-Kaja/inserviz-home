@@ -66,10 +66,65 @@ const AppliedJob = () => {
                         </div>
                       </div>
 
+
+    return(
+        <>
+        <div style={{display:'flex', position:'relative', justifyContent:'center', flexDirection:'column', maxwidth:'70%', marginLeft: "2rem"}}>
+            <h3> Current Applied Jobs:</h3>
+            <div className='scrollable-table'>
+               <table className="table">
+
+                <thead>
+                    <tr className='tr1'>
+                    <th>Job Title</th>
+                    <th className='th'>Applied Data</th>
+                    <th className='th'>Company</th>
+                    <th className='th'>Status</th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                <tr className='tr'>
+                    
+                    <td className='tr-td1'>
+                        <div className='job-title-col-fscrn' >
+
+                            <img className='img1' src={company} alt="" />
+                            
+                            <div className='job-detail-fscrn'>
+                                <div className='job-position-fscrn'>
+                                    <a style={{fontSize:'14px', fontWeight:'bold', textDecoration:'none', marginBottom:'0px'}} href="">
+                                        <div>
+                                            Senior UI/UX Designer
+                                        </div> 
+                                    </a>
+                                    <div>
+                                        <img className='img-calander2' src={calander} alt="" />
+                                       <div> 1 day ago</div> 
+                                    </div>
+                                    
+                                </div>
+                            
+                                <div className='job-location-fscrn'>
+                                    <div>
+                                        <img className='img-location' src={location} alt="" />
+                                        New-York, USA
+                                    </div>
+                                   
+                                   <div>
+                                    <img className='img-arrow' src={arrowRight} alt="" />
+                                    <div style={{color:'#595959'}}>Salary:  <span>$60-$90</span> /Hour</div>   
+                                   </div>
+                                </div>
+                                                          
+                            </div>
+
+
                       <div className="job-location-fscrn">
                         <div>
                           <img className="img-location" src={location} alt="" />
                           New-York, USA
+
                         </div>
 
                         <div>

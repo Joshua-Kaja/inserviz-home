@@ -1,0 +1,26 @@
+/* .profile_dash_container{
+    display: flex;
+    background: rgba(249, 249, 249);
+    padding-top:2rem;
+    padding-bottom: 2rem;
+} */
+
+
+.currently_applied_container{
+    display: flex;
+    background: rgba(249, 249, 249);
+    
+}
+
+.applied_container{
+    margin-top:3rem;
+}
+
+.jobs{
+    height:100vh;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}

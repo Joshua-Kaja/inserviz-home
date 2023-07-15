@@ -1,0 +1,82 @@
+.socialNetwork{
+    padding: 0rem 0rem 4rem 2rem;
+
+}
+
+.socialNetwork_header{
+    background-color: #fff;
+    max-width: 10rem;
+    border-radius: 5px;
+    font-family: 'Exo 2', sans-serif;
+    padding: 0.8rem;
+    font-size: large;
+    font-weight: 550;
+}
+
+label {
+    font-family: 'Exo 2', sans-serif;
+}
+
+::placeholder{
+    font-family: 'Works sans', sans-serif;
+    color:#595959
+}
+
+
+
+.form_social_container{
+    background-color: #fff;
+    max-width: 200rem;
+    padding-bottom: 2rem;
+    margin-top: 2rem;
+    border-radius: 10px;
+    border-top: 4px solid rgba(0,167,172);
+}
+
+.img_input{
+    display: flex;
+    flex-direction: row;
+    border:1px solid rgba(0, 167, 172, 0.12);
+    border-radius: 5px;
+    padding:14px;
+    width: 20rem;
+    margin-top:13px;
+    gap:8px;
+}
+
+.img_input input{
+    outline: none;
+    border: none;
+    min-width:19rem;
+    margin-top:2px;
+}
+
+.social_input{
+    display: grid;
+    grid-template-columns: repeat(2, 350px);
+    padding:3rem 3rem 2rem 3rem;
+    gap:1.6rem;
+
+}
+
+.edit_social{
+    padding: 14px;
+    padding-left:20px;
+    background: #00a7ac;
+    cursor: pointer;
+    margin-left: 3rem;
+    width:8rem;
+    border-radius: 5px;
+    margin-top: 2rem;
+    transition: 0.5s all ease;
+}
+
+.edit_social button{
+    outline: 0;
+    border: 0;
+    background: 0;
+    min-width: 8rem;
+    cursor: pointer;
+
+}
+
