@@ -14,6 +14,7 @@ import Recruiters from '../../Recruiters/Recruiters'
 import Article from '../../Article/Article'
 import Footer from '../../Footer/Footer'
 import SearchInput from '../../SearchInput/SearchInput'
+import Settings from 'C:/Users/Donkor James/OneDrive/Documents/inserviz-home/src/components/ProfileSettings/ProfileSettings.jsx'
 
 function Home() {
     const HomeData = [
@@ -82,7 +83,7 @@ function Home() {
             <Footer/>
 
         </div> */}
-      
+      <Settings />
     </div>
   )
 }

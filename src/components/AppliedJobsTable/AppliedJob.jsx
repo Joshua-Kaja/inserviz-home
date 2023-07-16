@@ -13,7 +13,7 @@ const AppliedJob = () => {
 
     return(
         <>
-        <div style={{display:'flex', position:'relative', justifyContent:'center', flexDirection:'column', maxwidth:'70%', marginLeft: "2rem"}}>
+        <div style={{display:'flex', position:'relative', justifyContent:'center', flexDirection:'column', maxwidth:'70%', marginLeft: "2rem",}}>
             <h3> Current Applied Jobs:</h3>
             <div className='scrollable-table'>
                <table className="table">
