@@ -1,0 +1,24 @@
+.input-label{
+    font-size: 15px;
+}
+
+.input{
+    display: flex;
+    min-width: 270px;
+    max-width: 500px;
+    margin-top: 8px;
+    padding: 14px 17px;
+    border: 1px solid;
+    border-color: #4ac3c74f;
+    border-radius: 6px;
+}
+
+.input-textarea{
+    width: 180px;
+    padding: 1px 5px;
+    margin-left: 7px;
+    border: none;
+    border-left: 1px solid;
+    border-color: rgb(159, 157, 157);
+}
+
