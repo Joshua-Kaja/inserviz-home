@@ -6,14 +6,13 @@ import ProfileJobs from '../ProfileJobs/ProfileJobs'
 import MyProfile from '../MyProfile/MyProfile'
 import AppliedJob from '../AppliedJobsTable/AppliedJob'
 
-const Dashboard = () => {
+const Wrapper = ({children}) => {
   return (
     <div className='dashboard'>
       <div className='dashboard_container'>
         <SideBar/>
           <div className='end_dashboard_container'>
-            <ProfileJobs/>
-            {/* <AppliedJob/> */}
+           {children}
           </div>
       </div>  
     <Footer/>
@@ -22,4 +21,4 @@ const Dashboard = () => {
   )
 }
 
-export default Dashboard
+export default Wrapper

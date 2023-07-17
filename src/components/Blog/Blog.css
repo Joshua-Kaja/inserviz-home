@@ -1,0 +1,51 @@
+.blog{
+    padding: 6rem 4rem 6rem 4rem;
+    background: rgba(249, 249, 249);
+}
+
+.blog_container{
+    display: flex;
+    gap:5rem;
+}
+
+.blog_header{
+    padding-top:3rem;
+}
+
+
+.blog_header div:nth-child(1){
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1.5rem;
+    color:#595959;
+    transition: all 500ms;
+}
+
+.blog_header div:nth-child(1):hover{
+    color:#00a7ac;
+
+}
+
+.blog_empty{
+    content:'';
+    height:1.2rem;
+    width:1px;
+    background: #00a7ac;
+}
+
+.blog_team{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    align-items: center;
+    font-family: 'Works sans', sans-serif;
+}
+
+.blog_team span{
+    color:#00a7ac;
+    transition: all 500ms;
+}
+
+.blog_team span:hover{
+    color:#595959;
+
+}

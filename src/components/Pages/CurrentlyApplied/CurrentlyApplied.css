@@ -6,15 +6,12 @@
 } */
 
 
-.currently_applied_container{
+ /* .currently_applied_container{
     display: flex;
     background: rgba(249, 249, 249);
     
 }
 
-.applied_container{
-    margin-top:3rem;
-}
 
 .jobs{
     height:100vh;
@@ -23,4 +20,4 @@
 
 ::-webkit-scrollbar{
     display: none;
-}
+} */

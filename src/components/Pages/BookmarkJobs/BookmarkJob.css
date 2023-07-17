@@ -1,0 +1,13 @@
+
+.bookmarkJob_container{
+    display: flex;
+    background: rgba(249, 249, 249);
+    /* flex-wrap: wrap; */
+    flex-direction: row;
+   
+}
+
+.bookmark_mark{
+    overflow-y: scroll;
+    height: 100vh;
+}

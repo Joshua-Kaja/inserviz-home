@@ -1,0 +1,145 @@
+.bookmark_container{
+    padding:5rem 2rem;
+}
+
+.bookmark_jobs{
+    background: white;
+    padding:1rem;
+    width: 8rem;
+    border-radius: 5px;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.bookmark_jobs span{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.table{
+    border: 1px solid #00a7ac;
+    width: 56rem;
+    margin-top: 1rem;
+}
+
+.bookmark_categories{
+    background: #fff;
+}
+
+.bookmark_category{
+    display: flex;
+    line-height: 1.7;
+    padding:10px 14px;
+    align-items: center;
+    
+    
+    
+
+}
+
+.bookmark_calender{
+    padding-left:10px;
+}
+
+.bookmark_calender span{
+    padding-left:10px;
+}
+
+.bookmark_til{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width:29rem;
+    
+}
+
+.bookmark_header_details{
+    padding:0px 13px;
+    gap:4px;
+    display: flex;
+}
+
+.bookmark_down_details{
+    display: flex;
+    gap:10px;
+    padding-left:10px;
+    
+}
+
+.img_loc_bookmark{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.img_bookmark img{
+    border-radius: 50%;
+    height: 2.3rem;
+    width: 2.3rem;
+}
+
+.role_bookmark {
+    font-family: "Exo 2", sans-serif;
+}
+
+.role_bookmark span{
+    color:black;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.bookmark_title{
+    display: flex;
+    flex-direction: row;
+    padding:16px 13px;
+    background: #00a7ac;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    color:#fff;
+    font-family: 'Works sans', sans-serif;
+}
+
+
+.title{
+    padding-left:26rem;
+    
+}
+
+.job_loc_icon{
+    padding-left:0rem;
+}
+
+.t1{
+    padding-left: 5rem;
+}
+
+.bookmark_header{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding:7px 10px;
+    
+}
+
+.bookmark_okay{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 0.5rem;
+
+    
+}
+
+.bookmark_company{
+    padding-left: 3rem;
+}
+
+
+.bookmark_action{
+    padding-left:3rem;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.bookmark_action span{
+    color:#00a7ac;
+}
