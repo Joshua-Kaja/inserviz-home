@@ -13,8 +13,10 @@ const AppliedJob = () => {
 
     return(
         <>
-        <div style={{display:'flex', position:'relative', justifyContent:'center', flexDirection:'column', maxwidth:'70%', marginLeft: "2rem",}}>
-            <h3> Current Applied Jobs:</h3>
+        <div style={{display:'flex', position:'relative', justifyContent:'center', flexDirection:'column', maxwidth:'70%', marginLeft: "0rem"}}>
+          <div className='currently_applied'>
+            <span> Current Applied Jobs:</span>
+          </div>
             <div className='scrollable-table'>
                <table className="table">
 
@@ -283,7 +285,7 @@ const AppliedJob = () => {
             {/* medium screen */}
         
 
-            <table className='table2'>
+            {/* <table className='table2'>
                
                 <tbody className='tbody1'>
                     <tr className='tr-md1'>
@@ -703,7 +705,7 @@ const AppliedJob = () => {
                     </tr>
         
                 </tbody>
-            </table>
+            </table> */}
             </div>
             
         </div>

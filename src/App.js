@@ -13,6 +13,11 @@ import MyProfile from './components/MyProfile/MyProfile';
 import MyProfileDashBoard from './components/Pages/MyProfileDashBoard/MyProfileDashBoard';
 import CurrrentlyApplied from './components/Pages/CurrentlyApplied/CurrrentlyApplied';
 import AboutUs from './components/Pages/AboutUs/AboutUs';
+import Faqs from './components/Pages/Faqs/Faqs';
+import BlogPage from './components/Pages/BlogPage/BlogPage';
+import BlogSitePage from './components/Pages/BlogSitePage/BlogSitePage';
+import Bookmark from './components/Pages/BookmarkJobs/BookmarkJob';
+import BookmarkJob from './components/Pages/BookmarkJobs/BookmarkJob';
 
 
 function App() {
@@ -55,6 +60,15 @@ function App() {
           <Route exact path='/aboutUs' element={<AboutUs/>}/>
         </Routes>
         <Routes>
+          <Route exact path='/faqs' element={<Faqs/>}/>
+        </Routes>
+        <Routes>
+          <Route exact path='/blogPage' element={<BlogPage/>}/>
+        </Routes>
+        <Routes>
+          <Route exact path='/blogSite' element={<BlogSitePage/>}/>
+        </Routes>
+        <Routes>
           <Route exact path='/dashboard' element={<Dashboard/>}/>
         </Routes>
         <Routes>
@@ -62,6 +76,9 @@ function App() {
         </Routes>
         <Routes>
           <Route exact path='/appliedJobs' element={<CurrrentlyApplied/>}/>
+        </Routes>
+        <Routes>
+          <Route exact path='/bookmark' element={<BookmarkJob/>}/>
         </Routes>
         {/* <Routes>
           <Route path='*' element={<Error/>}/>

@@ -10,9 +10,22 @@
 
 }
 
+.currently_applied{
+    background: white;
+    padding:1rem;
+    width: 11rem;
+    border-radius: 5px;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.currently_applied span{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
 .scrollable-table{
     min-height: 450px;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     margin-bottom: 120px;
     
 
@@ -84,6 +97,7 @@ td a{
 .job-title-col-fscrn{
     display: flex;
     flex-direction: row;
+    width:26rem;
     flex-wrap: wrap;
     margin-left: 14px;
     margin-top: 5px;
@@ -197,7 +211,7 @@ td div span {
 
 
 /* Medium screen */
-
+/* 
 @media (max-width: 800px) {
 
     .table{
@@ -248,9 +262,9 @@ td div span {
         box-shadow: 1px 1px 5px #00a6ac1f;
     }
     
-    /* .tbody1 .td-last4 input, .tbody4 .td-last4 input{
-        background-color: ;
-    } */
+    .tbody1 .td-last4 input, .tbody4 .td-last4 input{
+        background-color: blue;
+    }
 
     .job-position div{
         display: flex;
@@ -306,4 +320,4 @@ td div span {
     
 }
 
-
+ */
