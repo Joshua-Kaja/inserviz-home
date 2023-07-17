@@ -1,0 +1,372 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.form-wrapper{
+    position: relative;
+    right: 50px;
+    max-width: 68%;
+    min-width: 66%;
+    margin-top: 130px;
+    margin-left: 7%;
+    margin-right: 9%;
+    border: 1px solid;
+    border-top: 5px solid;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-color: #04b3b9;
+    border-left-color: #04b3b924;
+    border-right-color: #04b3b924;
+    border-bottom-color: #04b3b924;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    margin: 54px 67px;
+}
+
+.profile-head{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 26px;
+}
+
+.profile-head img{
+    margin-right: 4px;
+}
+
+.password-container-head{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.password-input-container{
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 45px;
+
+}
+
+.password-input1{
+    margin-right: 18px;
+    margin-bottom: 18px;
+    
+}
+
+
+
+.update-btn{
+    padding: 14px 17px;
+    margin-bottom: 38px;
+    background-color: white;
+    border: 1px solid;
+    border-radius: 6px;
+    border-color: #4ac3c74f;
+}
+
+:hover.update-btn{
+    background-color: #06a8ae;
+    color: white;
+}
+
+.btn-text{
+    font-size: 16px;
+}
+
+.phone-email-head{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 18px;
+    font-weight: 500;
+}
+
+.phone-inputs{
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.phone-input1{
+    margin-right: 18px;
+}
+
+.email-inputs{
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.email-input1{
+    margin-right: 18px;
+}
+
+.change-location-container{
+    margin-top: 28px;
+}
+
+.change-location-head{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+
+.header-line{
+    height: 1px;
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 450px;
+    border: 1px solid;
+    border-color: #04b3b94f;
+}
+
+.header-line2{
+    height: 1px;
+    margin-top: 10px;
+    margin-left: 35px;
+    width: 480px;
+    border: 1px solid;
+    border-color: #08a3a94f;
+}
+
+.privacy-security{
+    margin-bottom: 25px;
+    font-weight: 500;
+    margin-right: 18px;
+}
+
+.privacy-security-wrapper{
+    display: flex;
+    flex-direction: row;
+    margin-top: 42px;
+
+}
+
+.job-resume{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+.disable-account-container{
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 18px;
+    margin-bottom: 10px;
+}
+
+.disable-account-container div{
+    color: rgb(71, 70, 70);
+    font-weight: 400;
+}
+
+.delect-account-head{
+    font-size: 15px;
+    font-weight: 500;
+
+}
+
+.delect-account-text{
+    margin-right: 70px;
+}
+
+.delect-account-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 22px;
+}
+
+
+.delect-account{
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 5px;
+    /* margin-left: 20px; */
+    color: rgb(248, 20, 20);
+    cursor: pointer;
+}
+
+
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 22px;
+  }
+  
+  .toggle-switch input {
+    display: none;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    transition: .4s;
+    border-radius: 24px;
+    border: 1px solid;
+    border-color: rgb(169, 168, 168);
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 3px;
+    background-color: rgba(188, 185, 185, 0.979);
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  input:checked+.slider {
+    background-color: #379ba0;
+    color: white;
+    border: none;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+    color: white;
+  }
+
+  .slider::after{
+    background-color: white;
+  }
+
+.delect-account-text{
+    color: rgb(71, 70, 70);
+    font-weight: 400;
+}
+
+.disable-account {
+    display: flex;
+    justify-content: space-between;
+}
+
+.job-alert{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.resume-visible{
+    display: flex;
+    justify-content: space-between;
+}
+
+.disable-account{
+    margin-top: 26px;
+}
+
+.disable-text{
+    margin-right: 65px;
+}
+
+.disable-account div{
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+}
+
+.label{
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+.label2{
+    display: none;
+}
+
+.update-btn2{
+    font-size: 17px;
+    padding: 14px 17px;
+    margin: 34px 0px ;
+    background-color:#06a8ae;
+    color: white;
+    border: 1px solid;
+    border-radius: 6px;
+
+}
+
+:hover.update-btn2{
+    background-color: #050e1dfc;
+    color: white;
+}
+
+.delect-account2{
+    display: none;
+}  
+
+@media (max-width: 1055px) {
+    .password-input-container,.email-inputs,.phone-inputs, .password-input-container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .phone-inputs{
+        margin-bottom: 10px;
+    }
+    
+
+    .password-input1, .password-input2, 
+    .email-input1, .email-input2,
+    .phone-input1, .phone-input2{
+        margin: 14px 0px ;
+        max-width: 560px;
+        
+    }
+
+
+
+}
+
+@media (max-width: 820px) {
+    .form-wrapper{
+        min-width: 80%;
+        margin-left: 18%;
+    }
+
+
+}
+
+@media (max-width: 740px) {
+    .label, .delect-account{
+        display: none;
+    }
+
+    .label2{
+        display: inline-block;
+        margin-top: 13px;
+        margin-left: 0px;
+    }
+
+    .delect-account-text, .disable-text{
+        margin-top: 5px;
+        margin-right: 18px;
+    }
+    .delect-account2{
+        display: block;
+        font-size: 15px;
+        font-weight: 500;
+        margin-top: 5px;
+        color: rgb(248, 20, 20);
+        cursor: pointer;
+        margin-top: 15px;
+    }  
+}
