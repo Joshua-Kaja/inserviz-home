@@ -45,7 +45,7 @@ const Navbar = ({openSignInPopUp, openSignUpPopUp}) => {
                         <Link style={{textDecoration:'0', color:'#000'}} to='/'><span>Home</span></Link>
                         <Link style={{textDecoration:'0', color:'#000'}} to='/aboutUs'><span style={{paddingLeft:'3rem'}}>About Us</span></Link>
                         <Link style={{textDecoration:'0', color:'#000'}} to='/faqs'><span style={{paddingLeft:'3rem'}}>FAQS</span></Link>
-                        <Link style={{textDecoration:'0', color:'black'}} to="/blog"><span style={{paddingLeft:'3rem'}}>Blog</span></Link>
+                        <Link style={{textDecoration:'0', color:'black'}} to="/blogPage"><span style={{paddingLeft:'3rem'}}>Blog</span></Link>
                         <button className='btn_inprov' type="button" onClick={ openSignUpPopUp }>Become an Inprov</button>
                     </div>
                     <div className='navbar_down_right'>
