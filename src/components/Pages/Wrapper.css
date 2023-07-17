@@ -1,0 +1,19 @@
+ .currently_applied_container{
+    display: flex;
+    background: rgba(249, 249, 249);
+    
+}
+
+
+.jobs{
+    height:100vh;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.end_dashboard_container{
+    padding:5rem 1.5rem;
+}

@@ -11,7 +11,7 @@ const Dashboard = () => {
     <div className='dashboard'>
       <div className='dashboard_container'>
         <SideBar/>
-          <div className='end_dashboard_container'>
+          <div className='end_dashboard'>
             <ProfileJobs/>
             {/* <AppliedJob/> */}
           </div>

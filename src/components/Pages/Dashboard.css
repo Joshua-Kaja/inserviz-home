@@ -8,7 +8,7 @@
    
 }
 
-.end_dashboard_container{
+.end_dashboard{
     display: flex;
     flex-direction: column;
     height: 100vh;
