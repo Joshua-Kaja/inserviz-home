@@ -36,14 +36,14 @@
     color:#595959;
     display: none;
     /* min-height: 0; */
-    transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+    
 }
 
 .faq_answer.show{
     /* min-height: 999px; */
-    height: auto;
+    height: 70px;
     display: block;
-    transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+   
 
 }
 
@@ -51,6 +51,10 @@
     background:#fff;
     margin-bottom: 5px;
     padding: 20px 30px;
+    
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+
 }
 
 

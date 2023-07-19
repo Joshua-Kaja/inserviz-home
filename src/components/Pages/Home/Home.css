@@ -79,6 +79,7 @@
 .home_category{
     display: flex;
     flex-direction: row;
+    /* flex-wrap: wrap; */
     align-items: center;
     position: relative;
 }
@@ -133,9 +134,40 @@
     padding-top: 90px;
 }
 
+@media screen and (width <= 567px){
+    .home_text h2{
+        font-size: 2rem;
+        margin-right: 4rem;
+    }
+
+    .home_text p{
+        font-size: 15px;
+        min-width:fit-content ;
+    }
+
+    .home_categories{
+        display: flex;
+        flex-direction: column;
+    }
+    .home_body{
+        width: 20rem;
+    }
+    
+    .home_container{
+        z-index: 20000;
+    
+        position: relative;
+        
+    }
+    
+    
+    
+    
+    
+}
 
 
-@media screen and (max-width:1080px){
+/* @media screen and (max-width:1080px){
     .home_body{
         height:60rem;
     }
@@ -163,4 +195,4 @@
         width: 20rem;
     }
 
-} 
+}  */

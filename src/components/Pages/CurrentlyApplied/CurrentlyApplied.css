@@ -1,23 +1,4 @@
-/* .profile_dash_container{
-    display: flex;
-    background: rgba(249, 249, 249);
-    padding-top:2rem;
-    padding-bottom: 2rem;
-} */
-
-
- /* .currently_applied_container{
-    display: flex;
-    background: rgba(249, 249, 249);
-    
-}
-
-
-.jobs{
-    height:100vh;
+.applied_jobs{
     overflow-y: scroll;
+    height: 100vh;
 }
-
-::-webkit-scrollbar{
-    display: none;
-} */

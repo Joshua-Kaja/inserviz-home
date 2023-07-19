@@ -1,14 +1,16 @@
-*{
+/* *{
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-}
+} */
+
+
 .form-wrapper{
-    position: relative;
-    right: 50px;
-    max-width: 68%;
-    min-width: 66%;
-    margin-top: 130px;
+    /* position: relative; */
+    /* right: 50px; */
+    min-width: 40rem;
+    /* min-width: 66%; */
+    margin: 100px 0px;
     margin-left: 7%;
     margin-right: 9%;
     border: 1px solid;
@@ -19,6 +21,10 @@
     border-left-color: #04b3b924;
     border-right-color: #04b3b924;
     border-bottom-color: #04b3b924;
+    background-color: #fff;
+    overflow: hidden;
+    /* height:100vh;
+    overflow-y: scroll; */
 }
 
 .form{
@@ -47,7 +53,7 @@
 .password-input-container{
     display: flex; 
     flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: space-between;
     margin-bottom: 45px;
 
@@ -59,7 +65,11 @@
     
 }
 
-
+input{
+    outline: 0;
+    border:0;
+    
+}
 
 .update-btn{
     padding: 14px 17px;
@@ -89,7 +99,7 @@
 .phone-inputs{
     display: flex; 
     flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: space-between;
     margin-bottom: 20px;
 }
@@ -101,7 +111,7 @@
 .email-inputs{
     display: flex; 
     flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: space-between;
 }
 
@@ -177,7 +187,19 @@
 
 .delect-account-text{
     margin-right: 70px;
+    display:flex;
+    gap:1rem;
+    justify-content: space-between;
+    align-items: center;
+    padding-top:10px;
 }
+
+.delete{
+    min-width: fit-content;
+    color: red;
+    cursor: pointer;
+}
+
 
 .delect-account-wrapper{
     display: flex;

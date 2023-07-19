@@ -18,6 +18,7 @@ import BlogPage from './components/Pages/BlogPage/BlogPage';
 import BlogSitePage from './components/Pages/BlogSitePage/BlogSitePage';
 import Bookmark from './components/Pages/BookmarkJobs/BookmarkJob';
 import BookmarkJob from './components/Pages/BookmarkJobs/BookmarkJob';
+import Settings from './components/Pages/SettingsDashboard/Settings';
 
 
 function App() {
@@ -79,6 +80,9 @@ function App() {
         </Routes>
         <Routes>
           <Route exact path='/bookmark' element={<BookmarkJob/>}/>
+        </Routes>
+        <Routes>
+          <Route exact path='/settings' element={<Settings/>}/>
         </Routes>
         {/* <Routes>
           <Route path='*' element={<Error/>}/>
