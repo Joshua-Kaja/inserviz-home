@@ -2,23 +2,37 @@ import React ,{useState} from 'react';
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import SignInPopUp from './components/OpenPopUp/SignInPopUp';
-import Home from './components/Pages/Home/Home';
+
 import Recruiters from './components/Recruiters/Recruiters';
 import SearchInput from './components/SearchInput/SearchInput';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import SignUp from './components/SignUp/SignUp';
-import Dashboard from './components/Pages/Dashboard';
-import Error from './components/Pages/Error';
+
+import Error from './Pages/Error';
 import MyProfile from './components/MyProfile/MyProfile';
-import MyProfileDashBoard from './components/Pages/MyProfileDashBoard/MyProfileDashBoard';
-import CurrrentlyApplied from './components/Pages/CurrentlyApplied/CurrrentlyApplied';
-import AboutUs from './components/Pages/AboutUs/AboutUs';
-import Faqs from './components/Pages/Faqs/Faqs';
-import BlogPage from './components/Pages/BlogPage/BlogPage';
-import BlogSitePage from './components/Pages/BlogSitePage/BlogSitePage';
-import Bookmark from './components/Pages/BookmarkJobs/BookmarkJob';
-import BookmarkJob from './components/Pages/BookmarkJobs/BookmarkJob';
-import Settings from './components/Pages/SettingsDashboard/Settings';
+import AboutUs from './Pages/AboutUs/AboutUs';
+import Faqs from './Pages/Faqs/Faqs';
+import PostJob from './Pages/PostJob/PostJob';
+import BogPage from './Pages/BlogPage/BlogPage';
+import BlogSitePage from './Pages/BlogSitePage/BlogSitePage';
+import MyProfileDashBoard from './Pages/MyProfileDashBoard/MyProfileDashBoard';
+import CurrrentlyApplied from './Pages/CurrentlyApplied/CurrrentlyApplied';
+import BookmarkJob from './Pages/BookmarkJobs/BookmarkJob';
+import Settings from './Pages/SettingsDashboard/Settings';
+import Home from './Pages/Home/Home';
+import Dashboard from './Pages/Dashboard/Dashboard';
+import Transcript from './Pages/Transcript';
+// import MyProfileDashBoard from './Pages/MyProfileDashBoard';
+// import CurrrentlyApplied from './Pages/CurrentlyApplied';
+// import AboutUs from './Pages/AboutUs';
+// import Faqs from './Pages/Faqs';
+// import BlogPage from './Pages/BlogPage';
+
+// import BlogSitePage from './Pages/BlogSitePage';
+// import Bookmark from './Pages/BookmarkJobs';
+// import BookmarkJob from './Pages/BookmarkJobs';
+// import Settings from './Pages/SettingsDashboard';
+// import PostJob from './Pages/PostJob';
 
 
 function App() {
@@ -31,6 +45,7 @@ function App() {
 
   const openSignUpPopUp = () => {
     setPopUp({
+      ...popUp,
       signup: true,
       login: false,
     });
@@ -38,6 +53,7 @@ function App() {
 
   const openSignInPopUp = () => {
     setPopUp({
+      ...popUp,
       signup: false,
       login: true,
     })
@@ -64,10 +80,13 @@ function App() {
           <Route exact path='/faqs' element={<Faqs/>}/>
         </Routes>
         <Routes>
-          <Route exact path='/blogPage' element={<BlogPage/>}/>
+          <Route exact path='/post' element={<PostJob/>}/>
         </Routes>
         <Routes>
-          <Route exact path='/blogSite' element={<BlogSitePage/>}/>
+          <Route exact path='/blogPage' element={<BogPage/>}/>
+        </Routes>
+        <Routes>
+          <Route exact path='/blogSite' element={<BlogSitePage/>} />
         </Routes>
         <Routes>
           <Route exact path='/dashboard' element={<Dashboard/>}/>
@@ -84,6 +103,10 @@ function App() {
         <Routes>
           <Route exact path='/settings' element={<Settings/>}/>
         </Routes>
+        <Routes>
+          <Route exact path='/viewTranscript' element={<Transcript/>}/>
+        </Routes>
+
         {/* <Routes>
           <Route path='*' element={<Error/>}/>
         </Routes> */}

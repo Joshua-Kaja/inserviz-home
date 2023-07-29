@@ -1,9 +1,9 @@
 import React from 'react'
 import './SocialLinks.css'
-import facebook from '../Pages/assets/facebook-2.svg'
-import twitter from '../Pages/assets/twiter-2.svg'
-import linkedIn from '../Pages/assets/linkedin-2.svg'
-import instagram from '../Pages/assets/instagram.svg'
+import facebook from '../../assets/facebook-2.svg'
+import twitter from '../../assets/twiter-2.svg'
+import linkedIn from '../../assets/linkedin-2.svg'
+import instagram from '../../assets/instagram.svg'
 import { Link } from 'react-router-dom'
 
 

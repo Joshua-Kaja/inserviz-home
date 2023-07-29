@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './Faq.css'
-import { FaqData } from '../Data/Faq'
+import { FaqData } from '../../Data/Faq';
 
 const Faq = () => {
     const [activeKey, setActiveKey] = useState(null);

@@ -1,16 +1,25 @@
 import React, {useState} from 'react'
 import './SearchInput.css'
-import imgIcon from '../Pages/assets/job3.svg'
-import category from '../Pages/assets/category.svg'
-import search from '../Pages/assets/search-2.svg'
+import imgIcon from '../../assets/job3.svg'
+import category from '../../assets/category.svg'
+import search from '../../assets/search-2.svg'
 
 const SearchInput = () => {
-    const [input, setInput] = useState('');
-    const [selectOption, setSelectOption] = useState();
+    const [formInput, setFormInput] = useState({
+      input:'',
+      selectOption:'',
+    });
+    // const [selectOption, setSelectOption] = useState();
     const [selectSearch, setSelectSearch ] = useState(null);
 
-    function handleChangeInput(event) {
-        setInput(event.target.value);
+    function handleChangeInput(e) {
+        // setInput(event.target.value);
+        const {name, value} = e.target;
+        setFormInput({
+          ...formInput,
+          [name]:value
+        });
+
     };
 
     function handleClickSearch(e) {
@@ -19,8 +28,12 @@ const SearchInput = () => {
     };
 
     function handleSelect(e) {
-      setSelectOption(e.target.value);
-    };
+      const {name, value} = e.target;
+      setFormInput({
+        ...formInput,
+        [name]:value
+      });
+    }
 
   return (
     <div className='searchInput'>
@@ -28,11 +41,19 @@ const SearchInput = () => {
         <form action="" className='search_form'>
           <div className='input_form'>
             <img src={imgIcon} alt="" />
-            <input type="text" placeholder='Job Title' onChange={handleChangeInput} value={input}/>
+            <input 
+            type="text" 
+            placeholder='Job Title' 
+            onChange={handleChangeInput} 
+            name='input'
+            value={formInput.input}/>
           </div>
           <div className='dropdown_form'>
             <img src={category} alt="" />
-              <select name="" id="" onChange={handleSelect} value={selectOption} className='selectOption'>
+              <select name="" id=""
+               onChange={handleSelect}
+                value={formInput.selectOption}
+                className='selectOption'>
                <option className='option' value="ui/ux">UI/UX Designer</option>
                 <option className='option' value="graphic">Graphic Designer</option>
                 <option className='option' value="frontend">Frontend Engineer</option>

@@ -1,6 +1,6 @@
 import React from 'react'
 import './WorkingProcess.css'
-import { WorkingData } from '../Data/WorkingProcess'
+import { WorkingData } from '../../Data/WorkingProcess'
 import { Link } from 'react-router-dom'
 
 const WorkingProcess = () => {

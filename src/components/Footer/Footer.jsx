@@ -1,15 +1,15 @@
 import React from 'react'
 import './Footer.css'
-import apple from '../Pages/assets/apple-app.svg'
-import google from '../Pages/assets/google-play.svg'
+import apple from '../../assets/apple-app.svg'
+import google from '../../assets/google-play.svg'
 import { Link } from 'react-router-dom'
-import footerIcon from '../Pages/assets/footer-support-icon.svg'
-import inserviz from '../Pages/assets/inserviz.png'
+import footerIcon from '../../assets/footer-support-icon.svg'
+import inserviz from '../../assets/inserviz.png'
 import SocialLinks from '../SocialLinks/SocialLinks'
-import facebook from '../Pages/assets/facebook-2.svg'
-import twitter from '../Pages/assets/twiter-2.svg'
-import linkedin from '../Pages/assets/linkedin-2.svg'
-import instagram from '../Pages/assets/instagram.svg'
+import facebook from '../../assets/facebook-2.svg'
+import twitter from '../../assets/twiter-2.svg'
+import linkedin from '../../assets/linkedin-2.svg'
+import instagram from '../../assets/instagram.svg'
 
 const Footer = () => {
   return (

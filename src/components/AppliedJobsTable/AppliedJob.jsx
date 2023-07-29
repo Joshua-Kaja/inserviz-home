@@ -1,13 +1,13 @@
 import React from 'react';
 import './AppliedJob.css'
-import company from '../Pages/assets/company-06.png'
-import company2 from '../Pages/assets/company-02.png'
-import company3 from '../Pages/assets/company-03.png'
-import company4 from '../Pages/assets/company-04.png'
-import company5 from '../Pages/assets/company-05.png'
-import location from '../Pages/assets/location.svg';
-import calander from '../Pages/assets/calender2.svg';
-import arrowRight from '../Pages/assets/arrow2.svg'
+import company from '../../assets/company-06.png'
+import company2 from '../../assets/company-02.png'
+import company3 from '../../assets/company-03.png'
+import company4 from '../../assets/company-04.png'
+import company5 from '../../assets/company-05.png'
+import location from '../../assets/location.svg';
+import calander from '../../assets/calender2.svg';
+import arrowRight from '../../assets/arrow2.svg'
 
 const AppliedJob = () => {
 

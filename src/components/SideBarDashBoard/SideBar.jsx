@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import './SideBar.css'
 import { Link } from 'react-router-dom'
-import { SideBarData } from '../Data/SideBar'
+import { SideBarData } from '../../Data/SideBar'
 
 const SideBar = () => {
   const [selectedElement, setSelectedElement] = useState(null);

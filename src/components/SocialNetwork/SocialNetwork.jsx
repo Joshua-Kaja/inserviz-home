@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import './SocialNetwork.css'
-import facebook2 from '../Pages/assets/facebook-2.svg'
-import twitter2 from '../Pages/assets/twiter-2.svg'
-import linkedin2 from '../Pages/assets/linkedin-2.svg'
-import pininterest2 from '../Pages/assets/pinterest-2.svg'
-import dribble2 from '../Pages/assets/dribble-2.svg'
-import behance2 from '../Pages/assets/behance-2.svg'
+import facebook2 from '../../assets/facebook-2.svg'
+import twitter2 from '../../assets/twiter-2.svg'
+import linkedin2 from '../../assets/linkedin-2.svg'
+import pininterest2 from '../../assets/pinterest-2.svg'
+import dribble2 from '../../assets/dribble-2.svg'
+import behance2 from '../../assets/behance-2.svg'
 
 const SocialNetwork = () => {
     const [facebook, setFacebook] = useState('');

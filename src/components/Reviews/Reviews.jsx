@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import './Review.css'
 import { Link } from 'react-router-dom'
-import { ReviewData } from '../Data/Reviews'
-import circle from '../Pages/assets/circle (1).svg'
-import arrowRight from '../Pages/assets/arrow-right (1).svg'
-import arrowLeft from '../Pages/assets/arrow-left.svg'
+import { ReviewData } from '../../Data/Reviews'
+import circle from '../../assets/circle (1).svg'
+import arrowRight from '../../assets/arrow-right (1).svg'
+import arrowLeft from '../../assets/arrow-left.svg'
 
 const Reviews = () => {
   const [reviewSelect, setReviewSelect] = useState(false);

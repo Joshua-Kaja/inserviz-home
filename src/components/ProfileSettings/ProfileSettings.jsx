@@ -1,10 +1,10 @@
 import Input from "../FormInput/FormInput";
 import "../ProfileSettings/ProfileSettings.css"
-import lock from "../Pages/assets/lock-2.svg"
-import phone from "../Pages/assets/phone-2.svg";
-import email from "../Pages/assets/email-2.svg";
-import Location from "../Pages/assets/location.svg";
-import settings from "../Pages/assets/profile-settings.svg"
+import lock from "../../assets/lock-2.svg"
+import phone from "../../assets/phone-2.svg";
+import email from "../../assets/email-2.svg";
+import Location from "../../assets/location.svg";
+import settings from "../../assets/profile-settings.svg"
 import Form from 'react-bootstrap/Form';
 
 function ProfileSettings() {
@@ -170,7 +170,7 @@ function ProfileSettings() {
                 <div className="delect-account-container">
                   <div className="delect-account-wrapper">
                
-                    <div className="delect-account-head">Delect Account</div>
+                    <div className="delect-account-head">Delete Account</div>
                     {/* <div className="delect-account">Delect Account</div>  */}
                       
                   </div>

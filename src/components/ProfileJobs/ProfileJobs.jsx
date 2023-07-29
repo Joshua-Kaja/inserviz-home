@@ -1,12 +1,13 @@
-import React from "react";
-import author1 from "../Pages/assets/author1.png";
-import { ProfileData } from "../Data/Profile";
+import React from "react"; 
+import author1 from "../../assets/author1.png";
+import { ProfileData } from "../../Data/Profile";
 import "./ProfileJobs.css";
 import AppliedJob from "../AppliedJobsTable/AppliedJob";
 
 const ProfileJobs = () => {
+  
   return (
-    <div className="profile_Jobs">
+    <section className="profile_Jobs">
       <div className="profile_header">
         <div className="profile_img">
           <img src={author1} alt="" />
@@ -22,7 +23,9 @@ const ProfileJobs = () => {
         </div>
       </div>
       <div className="profile_container">
+       
         {ProfileData.map((profile) => (
+          
           <div className="profile_category" key={profile.id}>
             <div className="profile_inbox">
               <div className="none"></div>
@@ -43,7 +46,7 @@ const ProfileJobs = () => {
         <AppliedJob />
 
       </div>
-    </div>
+    </section>
   );
 };
 

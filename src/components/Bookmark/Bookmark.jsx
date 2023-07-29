@@ -1,7 +1,8 @@
 import React from 'react'
 import './Bookmark.css'
 import { Link } from 'react-router-dom'
-import { BookmarkData } from '../Data/Bookmark'
+import { BookmarkData } from '../../Data/Bookmark'
+
 
 
 

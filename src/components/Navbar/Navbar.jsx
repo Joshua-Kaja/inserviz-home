@@ -1,10 +1,10 @@
 import React, {useState} from 'react'
 import './Navbar.css'
-import navImg from '../Pages/assets/inserviz.png'
+import navImg from '../../assets/inserviz.png'
 import SocialLinks from '../SocialLinks/SocialLinks'
-import notifications from '../Pages/assets/bell.svg'
-import personIcon from '../Pages/assets/signIn.svg'
-import post from '../Pages/assets/post.svg'
+import notifications from '../../assets/bell.svg'
+import personIcon from '../../assets/signIn.svg'
+import post from '../../assets/post.svg'
 import { Link } from 'react-router-dom'
 
 const Navbar = ({openSignInPopUp, openSignUpPopUp}) => {
@@ -54,10 +54,10 @@ const Navbar = ({openSignInPopUp, openSignUpPopUp}) => {
                             <img src={personIcon} alt="" />
                             <button type='button' >Sign In</button>
                         </div>
-                        <div className='postJob_btn'>
-                            <button type='button' onClick={handlePostClick}>Post Job</button>
+                        <Link className='postJob_btn' to='/post' style={{textDecoration:'none'}}>
+                            <button type='button'>Post Job</button>
                             <img src={post} alt="" />
-                        </div>
+                        </Link>
                     </div>
                 </div>
               </div>
