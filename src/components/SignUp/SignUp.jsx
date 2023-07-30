@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import './SignUp.css'
-import closeIcon from '../Pages/assets/x.svg'
-import verifyIcon from '../Pages/assets/captcha.png'
-import google from '../Pages/assets/google.png'
+import closeIcon from '../../assets/x.svg'
+import verifyIcon from '../../assets/captcha.png'
+import google from '../../assets/google.png'
 import { Link } from 'react-router-dom'
 
 const SignUp = ({closePopUp, openSignInPopUp}) => {
@@ -48,15 +48,7 @@ const SignUp = ({closePopUp, openSignInPopUp}) => {
                 <div className='password_req'>
                    <p style={{fontSize:'14px', color:'#595959'}}>Password must contain at least 8 characters including 1 uppercase letter, 1 lowercase letter, 1 number, and 1 special character</p>
                </div>
-              
-               {/* <div className='verify_human'>
-                    <input type="checkbox" name="" id="verify" />
-                    <span>I am human</span>
-                    <div className='recapture'>
-                      <img width='30px' height='30px' src={verifyIcon} alt="" />
-                    </div>
-                
-               </div> */}
+            
                <div className='signUp_btn'>
                   <button type='button'>Sign Up</button>
                 </div>

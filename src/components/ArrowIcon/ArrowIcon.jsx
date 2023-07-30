@@ -1,8 +1,8 @@
 import React from 'react'
 import './ArrowIcon.css'
-import arrowRight from '../Pages/assets/arrow-right (1).svg'
-import arrowLeft from '../Pages/assets/arrow-left.svg'
-import circle from '../Pages/assets/circle (1).svg'
+import arrowRight from '../../assets/arrow-right (1).svg'
+import arrowLeft from '../../assets/arrow-left.svg'
+import circle from '../../assets/circle (1).svg'
 const ArrowIcon = () => {
   return (
     <div className='arrowIcon'>

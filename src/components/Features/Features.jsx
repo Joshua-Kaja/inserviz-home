@@ -1,7 +1,7 @@
 import React from 'react'
 import './Features.css'
 import { Link } from 'react-router-dom'
-import { FeaturesData } from '../Data/Features'
+import { FeaturesData } from '../../Data/Features'
 import Explore from '../ExploreMore/Explore'
 
 const Features = () => {

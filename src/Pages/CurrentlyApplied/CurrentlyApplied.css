@@ -1,0 +1,4 @@
+.applied_jobs{
+    overflow-y: scroll;
+    height: 100vh;
+}

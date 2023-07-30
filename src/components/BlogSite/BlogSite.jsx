@@ -1,7 +1,8 @@
 import React from 'react'
 import './BlogSite.css'
-import imgBlog2 from '../Pages/assets/blog-img-st-02.png'
-import { BlogSiteData } from '../Data/BlogSite'
+import imgBlog2 from '../../assets/blog-img-st-02.png'
+import { BlogSiteData } from '../../Data/BlogSite'
+// import { BlogSiteData } from '../Data/BlogSite'
 
 const BlogSite = () => {
   return (

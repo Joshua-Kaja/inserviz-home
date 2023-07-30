@@ -1,0 +1,376 @@
+.view_transcript{
+    background:  rgba(249, 249, 249);
+    padding:8rem 0rem 8rem 9.8rem;
+}
+
+.transcript_container{
+    border-top: 5px solid #00a7ac;
+    background-color: #fff;
+    padding:0px 2rem 4rem 4rem;
+    max-width: 54rem;
+    border-radius: 10px;
+    border-left: 1px solid rgba(0,167,172,.12);
+    border-right: 1px solid rgba(0,167,172,.12);
+    border-bottom: 1px solid rgba(0,167,172,.12);
+}
+
+.profile_contact{
+    display: flex;
+    gap:10rem;
+}
+
+.profile_item{
+    display: flex;
+    padding-top:2.8rem;
+    
+}
+
+.img_trans img{
+    border-radius: 5px;
+}
+
+.edit{
+    font-family: 'Exo 2', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    padding-left:10rem;
+}
+
+.edit_resume img{
+    padding-left: 10px;
+    
+}
+
+.conInfo{
+    padding-top: 0.7rem;
+}
+
+.contactInfo{
+    font-size: 1.3rem;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 500;
+    padding-left: 6rem;
+    padding-top:1rem;
+}
+
+.cont_Line{
+    font-family:'Exo 2', sans-serif ;
+    padding-top: 0.8rem;
+    padding-left: 1rem;   
+}
+
+.cont_Line img{
+    padding-left: 10px;
+}
+
+.email_line{
+    padding-top:14px;
+    padding-left: 14px;
+}
+
+.email_line img{
+    padding-left: 8px;
+}
+
+.web_line{
+    padding-top: 10px;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.web_line img{
+    padding-left: 10px;
+    
+}
+
+.app{
+    display: flex;
+}
+.num_date{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Exo 2', sans-serif;
+    color:#595959;
+    gap:10px;
+    padding-top: 2rem;
+
+}
+
+/* .profInfo_name_cat{
+    padding-top:1.7rem;
+} */
+
+.profInfo_name{
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 550;
+    padding-top: 2.7rem;
+}
+
+.date{
+    font-family: 'Exo 2', sans-serif;
+    color:#595959;
+    font-size: 15px;
+    font-weight: 500;
+    width: 10rem;
+
+}
+.transcript_name{
+    display: flex;
+    flex-direction: column;
+    padding:2rem 1rem;
+}
+
+.tra_name{
+    background: #f8f8f8;
+    margin: 10px 0px;
+    border-radius: 0 5px 5px 0;
+
+}
+.trans_name{
+    font-size: 1.4rem;
+    color:#00a7ac;
+    font-weight: 550;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.trans_job{
+    color:#595959;
+    padding-top: 13px;
+    font-weight: 500;
+    font-size: 1.125rem;
+    font-family: 'Works sans', sans-serif;
+    line-height: 21px;
+}
+
+.contact_item{
+    padding-top:1rem;
+    padding-left: 2rem;
+}
+
+.profInfo_category{
+    padding-top: 1.7rem;
+}
+
+.profInfo_name_cat{
+    display: flex;
+}
+
+.dotted_{
+    color: #00a7ac;
+    margin-top: 40px;
+    margin-left: 12px;
+}
+
+.professional_item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.comp_name{
+    padding: 45px 0px 12px 135px;
+}
+
+.undeline{
+    display: flex;
+    align-items: center;
+}
+
+.line_{
+    content: "";
+    height: 1px;
+    width: 5rem;
+    background-color: #00a7ac;
+}
+.num_profile{
+    display: flex;
+    flex-direction: row;
+}
+
+.text_profile_name{
+    display: flex;
+    flex-direction: column;
+    padding-left: 320px;
+    /* margin-top: 80px; */
+}
+
+.comp{
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.role{
+    display: flex;
+    flex-direction: column;
+    color: #595959;
+    font-family: 'Exo 2', sans-serif;
+    line-height: 1.7;
+    font-size: 15px;
+    padding:10px 17px;
+    max-width: 35rem;
+}
+
+.text_profile{
+    display: flex;
+    flex-direction: column;
+    /* margin: 23px; */
+    padding-left: 320px;
+}
+
+.undeline{
+    display: flex;
+    flex-direction: row;
+    /* padding: 15px; */
+    margin-top: 6.3rem;
+    margin-left: 10px;
+}
+
+.job_info_prof{
+    font-family: 'Exo 2', sans-serif;
+    color: #595959;
+    padding-top:10px;
+}
+
+.professional_{
+    display: flex;
+    flex-direction: row;
+}
+
+.duty_info{
+    font-family: 'Exo 2', sans-serif;
+    padding-top:10px;
+}
+.skills{
+    display: flex;
+    gap:14px;
+    padding-top:23px;
+}
+
+.special_name{
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 550;
+
+}
+
+.dotted_line{
+    color:#00a7ac;
+}
+
+.special_dev{
+    display: flex;
+    flex-direction: column;
+}
+
+.job_dev{
+    padding: 19px 0px;
+    color:#595959;
+    font-family: 'Works sans', sans-serif;
+}
+
+.btn-category{
+    padding: 19px 0px;
+    display: flex;
+    gap:2rem;
+    /* justify-content: space-evenly; */
+}
+
+.btn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color:#000;
+    font-family: 'Exo 2', sans-serif;
+    border: 1px solid #dfe9e5;
+    background-color: white;
+    transition: 0.5s all ease;
+    border-radius: 0.5rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    height:2rem;
+    /* position: relative; */
+    cursor: pointer;
+}
+
+.btn button{
+    border: 0;
+    outline: 0;
+    font-size: 14px;
+    background: none;
+    margin-left:3px;
+    font-family: 'Exo 2', sans-serif;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #00a7ac;
+}
+
+
+
+
+.authentication{
+    display: flex;
+    padding: 1rem 0px;
+    flex-direction: column;
+}
+
+.declare{
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 550;
+}
+
+.auth_name{
+    font-weight: 500;
+    font-size: 1.1rem;
+    font-family: 'Exo 2', sans-serif;
+    padding-top:6px;
+}
+
+.text_auth{
+    padding-top:0.8rem;
+    color:#595959;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.yours_info{
+    padding-top: 18px;
+    display: flex;
+    flex-direction: column;
+}
+ 
+.yours_info span:nth-child(1) {
+    font-family: 'Works sans', sans-serif;
+}
+
+.download_transcript{
+    background: #00a7ac;
+    width: fit-content;
+    padding: 13px;
+    border-radius: 5px;
+    transition: 0.5s ease;
+    ;
+    
+    margin-top: 40px;
+}
+
+.download_transcript:hover{
+    background-color: #000;
+    cursor: pointer
+}
+
+.download_transcript button{
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    color: white;
+    font-family: 'Exo 2',sans-serif;
+    font-size: 1.1rem;
+    width: fit-content;
+    background: none;
+}

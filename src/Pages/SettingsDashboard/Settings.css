@@ -1,0 +1,9 @@
+.settings_container{
+    display: flex;
+    background: rgba(249, 249, 249);
+}
+
+.container{
+    overflow-y: scroll;
+    height: 100vh;
+}

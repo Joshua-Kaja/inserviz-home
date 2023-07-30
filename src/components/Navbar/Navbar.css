@@ -21,6 +21,7 @@
     height:2.2rem;
     border-bottom: 1px solid #f1f1f1;
     padding-top:8px;
+    
     font-family: 'Work Sans', sans-serif;
     padding-bottom: 10px;
 }
@@ -34,7 +35,7 @@
 }
 
 .social_platform{
-    margin-left: 30rem;
+    margin-left: 33rem;
 }
 
 .top_down_navbar{

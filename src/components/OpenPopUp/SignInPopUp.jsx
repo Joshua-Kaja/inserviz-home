@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import './OpenPopUp.css'
-import closeIcon from '../Pages/assets/x.svg'
+import closeIcon from '../../assets/x.svg'
 import { Link, useAsyncError } from 'react-router-dom'
-import google from '../Pages/assets/google.png'
+import google from '../../assets/google.png'
 
 
 const SignInPopUp = ({closePopUp, openSignUpPopUp}) => {

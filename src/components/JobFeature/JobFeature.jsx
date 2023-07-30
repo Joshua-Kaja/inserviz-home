@@ -1,8 +1,8 @@
 import React from 'react'
 import './JobFeature.css'
 import { Link } from 'react-router-dom'
-import { JobFeatureData } from '../Data/JobFeature'
-import arrow2 from '../Pages/assets/arrow2.svg'
+import { JobFeatureData } from '../../Data/JobFeature'
+import arrow2 from '../../assets/arrow2.svg'
 import Explore from '../ExploreMore/Explore'
 
 const JobFeature = () => {

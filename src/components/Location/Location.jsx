@@ -1,10 +1,10 @@
 import React, {useState} from 'react'
 import './Location.css'
-import { LocationData } from '../Data/Location'
+import { LocationData } from '../../Data/Location'
 import { Link } from 'react-router-dom'
-import circle from '../Pages/assets/circle (1).svg'
-import arrowRight from '../Pages/assets/arrow-right (1).svg'
-import arrowLeft from '../Pages/assets/arrow-left.svg'
+import circle from '../../assets/circle (1).svg'
+import arrowRight from '../../assets/arrow-right (1).svg'
+import arrowLeft from '../../assets/arrow-left.svg'
 
 const Location = () => {
   const [images, setImages] = useState();

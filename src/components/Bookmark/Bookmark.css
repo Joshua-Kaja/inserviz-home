@@ -1,5 +1,7 @@
+
 .bookmark_container{
     padding:5rem 2rem;
+    
 }
 
 .bookmark_jobs{
@@ -30,9 +32,6 @@
     line-height: 1.7;
     padding:10px 14px;
     align-items: center;
-    
-    
-    
 
 }
 
@@ -93,12 +92,9 @@
     flex-direction: row;
     padding:16px 13px;
     background: #00a7ac;
-    border-top-right-radius: 8px;
-    border-top-left-radius: 8px;
     color:#fff;
     font-family: 'Works sans', sans-serif;
 }
-
 
 .title{
     padding-left:26rem;

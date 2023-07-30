@@ -1,10 +1,10 @@
 import React from 'react'
 import './Recruiters.css'
 import ArrowIcon from '../ArrowIcon/ArrowIcon'
-import { RecuitersData } from '../Data/Recruiters'
+import { RecuitersData } from '../../Data/Recruiters'
 import { Link } from 'react-router-dom'
-import arrowRight from '../Pages/assets/arrow-right (1).svg'
-import circle from '../Pages/assets/circle (1).svg'
+import arrowRight from '../../assets/arrow-right (1).svg'
+import circle from '../../assets/circle (1).svg'
 
 const Recruiters = () => {
   return (

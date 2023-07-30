@@ -1,14 +1,15 @@
 import Input from "../FormInput/FormInput";
 import "../ProfileSettings/ProfileSettings.css"
-import lock from "../Pages/assets/lock-2.svg"
-import phone from "../Pages/assets/phone-2.svg";
-import email from "../Pages/assets/email-2.svg";
-import Location from "../Pages/assets/location.svg";
-import settings from "../Pages/assets/profile-settings.svg"
+import lock from "../../assets/lock-2.svg"
+import phone from "../../assets/phone-2.svg";
+import email from "../../assets/email-2.svg";
+import Location from "../../assets/location.svg";
+import settings from "../../assets/profile-settings.svg"
+import Form from 'react-bootstrap/Form';
 
 function ProfileSettings() {
   return (
-    <>
+  
       <div className="form-wrapper">
         <form className="form">
           <div className="profile-head">
@@ -121,10 +122,11 @@ function ProfileSettings() {
                   <div>All Job Alert</div>
 
                   <div>
-                  <label class="toggle-switch">
-                  <input type="checkbox" id="toggle-button" />
-                  <span class="slider"></span>
-                  </label>
+                    <label class="toggle-switch">
+                    <input type="checkbox" id="toggle-button" />
+                    <span class="slider"></span>
+                    </label>
+                    {/* */}
                   </div>
                 </div>
 
@@ -167,17 +169,19 @@ function ProfileSettings() {
 
                 <div className="delect-account-container">
                   <div className="delect-account-wrapper">
-                  
-                    <div className="delect-account-head">Delect Account</div>
-                    <div className="delect-account">Delect Account</div>
+               
+                    <div className="delect-account-head">Delete Account</div>
+                    {/* <div className="delect-account">Delect Account</div>  */}
                       
                   </div>
                   <div className="delect-account-text">
-                    If you delect your account, you will no longer be able to
-                    get information about the matched jobs.
+                  If you delete your account, you will no longer be able to
+                      get information about the matched jobs.
+                      <span className="delete">Delete Account</span>
+                      
                   </div>
 
-                  <div className="delect-account2">Delect Account</div>
+                 
                   <button className="update-btn2">Update Changes</button>
                 </div>
               </div>
@@ -189,8 +193,6 @@ function ProfileSettings() {
 
         </form>
       </div>
-
-    </>
   );
 }
 export default ProfileSettings

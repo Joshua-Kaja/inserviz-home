@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './Faq.css'
-import { FaqData } from '../Data/Faq'
+import { FaqData } from '../../Data/Faq';
 
 const Faq = () => {
     const [activeKey, setActiveKey] = useState(null);
@@ -19,8 +19,8 @@ const Faq = () => {
             </div>
             <div className='faq_categories'>
                 {FaqData.map((item, index) => (
-                    <div className='faq_category'>
-                        <div className='faq_title' onClick={() => toggleAnswer(index)} key={index}>
+                    <div className='faq_category' onClick={() => toggleAnswer(index)} key={index}>
+                        <div className='faq_title' >
                             <span>{item.question}</span>
                             <span>{activeKey === index ? '-' : '+'}</span>
                         </div>
