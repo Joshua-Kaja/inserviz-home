@@ -68,3 +68,59 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+inserviz-home
+├───app
+│   ├───api
+│   └───features
+│       └───authSlice
+├───assets
+├───components
+│   ├───About
+│   ├───AppliedJobsTable
+│   ├───ArrowIcon
+│   ├───Article
+│   ├───Blog
+│   ├───BlogSite
+│   ├───Bookmark
+│   ├───Explore
+│   ├───ExploreMore
+│   ├───Faq
+│   ├───Features
+│   ├───Footer
+│   ├───FormInput
+│   ├───HeaderBody
+│   ├───JobFeature
+│   ├───Jobs
+│   ├───JobTable
+│   ├───Location
+│   ├───MyProfile
+│   ├───Navbar
+│   ├───OpenPopUp
+│   ├───Post
+│   ├───ProfileJobs
+│   ├───ProfileSettings
+│   ├───Recruiters
+│   ├───Reviews
+│   ├───SearchInput
+│   ├───SideBarDashBoard
+│   ├───SignUp
+│   ├───SocialLinks
+│   ├───SocialNetwork
+│   ├───ViewTranscript
+│   └───WorkingProcess
+├───Data
+└───Pages
+    ├───AboutUs
+    ├───BlogPage
+    ├───BlogSitePage
+    ├───BookmarkJobs
+    ├───CurrentlyApplied
+    ├───Dashboard
+    ├───Faqs
+    ├───Home
+    ├───MyProfileDashBoard
+    ├───PostJob
+    ├───SettingsDashboard
+    └───Wrapper
