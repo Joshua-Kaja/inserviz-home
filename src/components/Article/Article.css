@@ -31,7 +31,7 @@
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    gap:1.5rem;
+    /* gap:1.5rem; */
     margin-top:2rem;
     margin-bottom: 7rem;
    
@@ -63,7 +63,8 @@
 .comment_person_article{
     display: flex;
     flex-direction: row;
-    gap:2.5rem;
+    /* gap:2.5rem; */
+    justify-content: space-between;
     padding-left:1.3rem;
     padding-top:8px;
     /* align-items: center; */
@@ -80,7 +81,13 @@
 }
 
 .comment_article{
-    padding-left:4rem;
+    padding-left:3rem;
+}
+
+.comment_section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .person_article span{
@@ -114,4 +121,113 @@
     margin:1rem 0rem 0rem 1rem;
     font-family: 'Exo 2', sans-serif;
     
+}
+
+
+@media (max-width:786px) {
+
+    .article_container{
+        margin: 4.8px 0px 0px 0px;
+        margin-top: 4.2rem;
+    }
+
+
+
+    .article_categories{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+        /* justify-content: center;
+        align-items: center; */
+    }
+
+    .article_category{
+        width: 350px;
+        margin-bottom: 54px;
+        /* margin-right: 7px; */
+        margin-left: 0px;
+        padding: 0px;
+        /* border: 1px solid; */
+    }
+    
+    .img_article img{
+        width:98%;
+        height: 200px;
+    }
+
+    .comment_article{
+        margin-right: 10px;
+    }
+
+    .date_article{
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        top: 44%;
+        left: -16px;
+        padding: 18px 50px;
+        text-align: center;
+    }
+
+    .article_link{
+        margin: 0px 8px;
+        font-size: 20px;
+        font-weight: 600;
+        /* border: 1px solid; */
+    }
+
+    .comment_person_article{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0px 45px 0px 0px;
+    }
+}
+
+@media (max-width:576px) {
+    .article_categories{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 96px 140px 0px;
+        margin-left: 0px;
+    }
+
+    .article_category{
+        position: relative;
+        margin: 24px 20px 0px 0px;
+        margin-bottom: 32px;
+    }
+
+    .article_header{
+        text-align: center;
+    }
+    
+    .img_article img{
+        width: 475px;
+        height: 275px;
+    }
+
+    .comment_article{
+        margin-right: 150px;
+    }
+
+    .date_article{
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        top: 51%;
+        left: -16px;
+        padding: 18px 50px;
+        text-align: center;
+    }
+
+    .article_link{
+        margin: 0px 8px;
+        font-size: 22px;
+    }
 }

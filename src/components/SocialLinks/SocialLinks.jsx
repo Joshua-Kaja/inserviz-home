@@ -18,7 +18,7 @@ const SocialData = [
     <div className='social_links'>
     {SocialData.map((link, index)=>(
         <div className='social_link' key={link.id}>
-            <Link to={`path ${link.url}`}><img src={link.img} alt=""/></Link>
+          <Link to={`path ${link.url}`}><img src={link.img} alt=""/></Link>
         </div>
     ))}
 

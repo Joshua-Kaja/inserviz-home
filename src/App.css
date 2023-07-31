@@ -1,0 +1,421 @@
+.menu, .hidden, .visible{
+    display: none;
+}
+
+@media (max-width: 786px) {
+    .menu{
+    } 
+
+    .menu-wrapper{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        /* border: 1px solid #b7baba50; */
+        /* z-index: 150; */
+        border-radius: 34px solid;
+        box-shadow: 4px 24px 28px #b7baba47;
+    }
+
+    .menu-head{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 25px;
+    }
+
+    .hidden{
+        display: none;
+    }
+
+    .visible{
+        display: flex;
+        position: fixed;
+        background-color:white;
+        top: 0px;
+        width: 340px;
+        height: 680px;
+        z-index: 100;
+        transition: all 0.9s;
+    }
+
+    .inserviz-logo img{
+        width:140px;
+        height: 36px;
+        margin-left: 8px;
+    }
+
+    .fa-times{
+        margin-right: 12px;
+    }
+
+    .menu-items{
+        display: flex;
+        flex-direction: column;
+        margin-top: 58px;
+    }
+
+    .menu-items a{
+        padding: 14px 25px;
+        border-bottom: 1px solid #dfe9e5;
+        /* margin-bottom: 2px; */
+        text-decoration: none;
+        text-align: center;
+        color: black;
+        font-size: 17px;
+        font-weight: 400;
+    }
+
+    .menu-items a:hover{
+        color: #00a7ac;
+    }
+
+    #home-id{
+        border-top: 1px solid #dfe9e5;
+    }
+
+    .menu-signIn{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 38px;
+        color: white;
+        font-family: 'Exo 2', sans-serif;
+        border: 1px solid #dfe9e5;
+        background-color: black;
+        transition: 0.5s all ease;
+        border-radius: 0.5rem;
+        padding-left:12px;
+        padding-right: 12px;
+        width: 80%;
+        height:2.5rem;
+        position: relative;
+        cursor: pointer;
+    }
+    
+    .menu-signIn button{
+        border: 0;
+        outline: 0;
+        font-size: 16px;
+        color: white;
+        background: none;
+        margin-left:3px;
+        font-family: 'Exo 2', sans-serif;
+        cursor: pointer;
+    }
+
+    
+    
+    .menu-signIn:hover{
+        background-color:#00a7ac;
+    }
+
+    .menu-postJob{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        transition: 0.5s all ease;
+        border:1px solid #dfe9e5;
+        background-color: #00a7ac;
+        color: white;
+        border-radius: 0.5rem;
+        width: 80%;
+        height:2.5rem;
+        padding-left:12px;
+        padding-right: 12px;
+        cursor: pointer;
+    
+    }
+
+    .signIn-wrapper, .postJob-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    .menu-postJob:hover{
+        background-color: #000;
+        
+    }
+    .menu-postJob button{
+        outline: 0;
+        border: 0;
+        font-size:16px;
+        background: none;
+        color:white;
+        font-family: 'Exo 2', sans-serif;
+        cursor: pointer;
+    
+    }
+
+    .btn-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 14px 25px;
+        border-bottom: 1px solid #dfe9e5;
+    }
+
+    .menu-inprov-btn{
+        border:none;
+        outline:0;
+        font-size: 17px;
+        font-weight: 500;
+        /* margin-top: 18px; */
+        /* text-decoration: none; */
+        text-align: center;
+        /* color: black; */
+        font-size: 17px;
+        font-weight: 400;
+        background: none;
+        color: #00a7ac;
+        cursor: pointer;
+        transition: 0.5s all ease;
+        font-family: 'Exo 2', sans-serif;
+    }
+
+    .menu-inprov-btn:hover{
+        color: #096265;
+    }
+    
+    /* .menu-inprov-btn:hover{
+        background-color: black;
+        cursor: pointer;
+    } */
+
+    .menu-social-platform{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 25px;
+    }
+
+    .socialMedia{
+        height: 38px;
+        width: 38px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 18px;
+        background-color: transparent;
+        border:1px solid #00a7ac;
+        border-image: initial;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: all 0.5s ease 0s;
+    }
+    
+}
+
+@media (max-width: 576px) {
+    .menu{
+    } 
+
+    .menu-wrapper{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        /* border: 1px solid #b7baba50; */
+        /* z-index: 150; */
+        border-radius: 34px solid;
+        box-shadow: 4px 24px 28px #b7baba47;
+    }
+
+    .menu-head{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 25px;
+    }
+
+    .hidden{
+        display: none;
+    }
+
+    .visible{
+        display: flex;
+        position: fixed;
+        background-color:white;
+        top: 0px;
+        width: 58%;
+        height: 680px;
+        z-index: 100;
+        transition: all 0.9s;
+    }
+
+    .inserviz-logo img{
+        width:140px;
+        height: 36px;
+        margin-left: 8px;
+    }
+
+    .fa-times{
+        margin-right: 12px;
+    }
+
+    .menu-items{
+        display: flex;
+        flex-direction: column;
+        margin-top: 58px;
+    }
+
+    .menu-items a{
+        padding: 14px 25px;
+        border-bottom: 1px solid #dfe9e5;
+        /* margin-bottom: 2px; */
+        text-decoration: none;
+        text-align: center;
+        color: black;
+        font-size: 17px;
+        font-weight: 400;
+    }
+
+    .menu-items a:hover{
+        color: #00a7ac;
+    }
+
+    #home-id{
+        border-top: 1px solid #dfe9e5;
+    }
+
+    .menu-signIn{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 38px;
+        color: white;
+        font-family: 'Exo 2', sans-serif;
+        border: 1px solid #dfe9e5;
+        background-color: black;
+        transition: 0.5s all ease;
+        border-radius: 0.5rem;
+        padding-left:12px;
+        padding-right: 12px;
+        width: 80%;
+        height:2.5rem;
+        position: relative;
+        cursor: pointer;
+    }
+    
+    .menu-signIn button{
+        border: 0;
+        outline: 0;
+        font-size: 16px;
+        color: white;
+        background: none;
+        margin-left:3px;
+        font-family: 'Exo 2', sans-serif;
+        cursor: pointer;
+    }
+
+    
+    
+    .menu-signIn:hover{
+        background-color:#00a7ac;
+    }
+
+    .menu-postJob{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        transition: 0.5s all ease;
+        border:1px solid #dfe9e5;
+        background-color: #00a7ac;
+        color: white;
+        border-radius: 0.5rem;
+        width: 80%;
+        height:2.5rem;
+        padding-left:12px;
+        padding-right: 12px;
+        cursor: pointer;
+    
+    }
+
+    .signIn-wrapper, .postJob-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    .menu-postJob:hover{
+        background-color: #000;
+        
+    }
+    .menu-postJob button{
+        outline: 0;
+        border: 0;
+        font-size:16px;
+        background: none;
+        color:white;
+        font-family: 'Exo 2', sans-serif;
+        cursor: pointer;
+    
+    }
+
+    .btn-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 14px 25px;
+        border-bottom: 1px solid #dfe9e5;
+    }
+
+    .menu-inprov-btn{
+        border:none;
+        outline:0;
+        font-size: 17px;
+        font-weight: 500;
+        /* margin-top: 18px; */
+        /* text-decoration: none; */
+        text-align: center;
+        /* color: black; */
+        font-size: 17px;
+        font-weight: 400;
+        background: none;
+        color: #00a7ac;
+        cursor: pointer;
+        transition: 0.5s all ease;
+        font-family: 'Exo 2', sans-serif;
+    }
+
+    .menu-inprov-btn:hover{
+        color: #096265;
+    }
+    
+    /* .menu-inprov-btn:hover{
+        background-color: black;
+        cursor: pointer;
+    } */
+
+    .menu-social-platform{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 25px;
+    }
+
+    .socialMedia{
+        height: 38px;
+        width: 38px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 18px;
+        background-color: transparent;
+        border:1px solid #00a7ac;
+        border-image: initial;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: all 0.5s ease 0s;
+    }
+    
+}

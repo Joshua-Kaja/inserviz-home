@@ -174,3 +174,58 @@
     color:#595959;
     font-size:1.1rem;
 }
+
+@media screen and (max-width:786px){
+
+    .recuiters_categories{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .recruiters_header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .recruiters_arrow{
+        display: none;
+    }
+}
+
+@media (max-width:576px) {
+    .recruiters_container{
+        /* text-align: center; */
+        margin: 0px 0px 0px 0px;
+
+    }
+    .recruiters_header_text{
+        text-align: center;
+    }
+
+    .recruiters_header_text span{
+        text-align: center;
+        margin: 0px 16px;
+    }
+
+
+    
+.recruiters_header_text h3{
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+
+    .recuiters_categories{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .recruiters_arrow{
+        display: none;
+    }
+    
+}

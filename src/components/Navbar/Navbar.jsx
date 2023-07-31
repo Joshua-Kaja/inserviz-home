@@ -3,15 +3,16 @@ import './Navbar.css'
 import navImg from '../Pages/assets/inserviz.png'
 import SocialLinks from '../SocialLinks/SocialLinks'
 import notifications from '../Pages/assets/bell.svg'
+import notification2 from '../Pages/assets/bell2.svg'
 import personIcon from '../Pages/assets/signIn.svg'
+import personIcon2 from '../Pages/assets/person-3.svg'
 import post from '../Pages/assets/post.svg'
 import { Link } from 'react-router-dom'
+import { ToggleButton } from 'react-bootstrap'
 
-const Navbar = ({openSignInPopUp, openSignUpPopUp}) => {
+const Navbar = ({openSignInPopUp, openSignUpPopUp, updateMenu}) => {
     const [selectPost, setSelectedPost] = useState(null);
     const [isOpen, setIsOpen] = useState(false);
-
-    
 
     function handlePostClick(e) {
         e.preventDefault();
@@ -20,6 +21,42 @@ const Navbar = ({openSignInPopUp, openSignUpPopUp}) => {
 
   return (
     <div className='navbar'>
+
+        <div className='navbar-sm'>
+            <div className='img_container'>
+              <Link to='/'><img style={{width:'9rem', height:'2rem'}} className="logo_img" src={navImg} alt="" /></Link>
+            
+              {/* <img style={{width:'9rem', height:'2rem'}} className="logo_img" src={navImg} alt="" /> */}
+            </div>
+            <div className='navbar-right-sm'>
+                <div className='md-btns'>
+                    {/* <div>
+                        <button className='btn_inprov' type="button" onClick={ openSignUpPopUp }>Become an Inprov</button>
+                    </div> */}
+                    <div className='signIn' onClick={ openSignInPopUp }>
+                        <img src={personIcon} alt="" />
+                        <button type='button' >Sign In </button>
+                    </div>
+                </div>
+
+                <div className='hamburger-wrapper'>
+                    <Link to='/notifications'> 
+                    <div className='notification-wrapper'>
+                        <img src={notification2} alt="" /> <div>3</div>
+                    </div> 
+                    </Link>
+                <div
+                    className='hamburger'
+                    onClick={updateMenu} >
+                    <span className='hamburger-top'></span>
+                    <span className='hamburger-middle'></span>
+                    <span className='hamburger-bottom'></span>
+                </div>
+
+                </div>
+            </div>
+        </div>
+
         <div className='nav_container'>
             <div className='img_container'>
               <Link to='/'><img style={{width:'9rem', height:'2rem'}} className="logo_img" src={navImg} alt="" /></Link>
@@ -48,6 +85,8 @@ const Navbar = ({openSignInPopUp, openSignUpPopUp}) => {
                         <Link style={{textDecoration:'0', color:'black'}} to="/blog"><span style={{paddingLeft:'3rem'}}>Blog</span></Link>
                         <button className='btn_inprov' type="button" onClick={ openSignUpPopUp }>Become an Inprov</button>
                     </div>
+
+
                     <div className='navbar_down_right'>
                         <Link to='/notifications'><img src={notifications} alt="" /></Link>
                         <div className='signIn' onClick={ openSignInPopUp }>

@@ -193,6 +193,9 @@
     .location_categories{
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
     }
 
     .location_category{
@@ -203,4 +206,26 @@
         margin-top: 2rem;
 
     }
+}
+
+@media screen and (max-width:786px){
+.location_categories{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.location_category{
+    margin-bottom: 24px;
+}
+}
+
+
+@media screen and (max-width:576px){
+    .location_container{
+        display: none;
+    }
+
 }

@@ -46,7 +46,6 @@ const SearchInput = () => {
           <div className='btn_search'>
             <img src={search} alt="" />
             <button type="Submit" onClick={handleClickSearch}>Search</button>
-
           </div>
         </form>
 
@@ -54,7 +53,7 @@ const SearchInput = () => {
 
     </div>
 
-</div>
+  </div>
     
   )
 }

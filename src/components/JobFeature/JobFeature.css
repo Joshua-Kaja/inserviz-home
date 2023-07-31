@@ -45,8 +45,9 @@
 
 .latestJob_categories{
     display: grid;
-    grid-template-columns: repeat(3, 390px);
-    margin-left:2rem;
+    grid-template-columns: repeat(3, 420px);
+    justify-content: center;
+    align-items: center;
 }
 
 .latestJob_category{
@@ -54,8 +55,8 @@
     width:19rem;
     padding:2rem;
     gap:0px;
-    left:-4px;
-    margin-left:1.6rem;
+    /* left:-4px; */
+    /* margin-left:1.6rem; */
     margin-bottom: 1.5rem;;
     border-radius:5px;
     transition: 0.5s;
@@ -233,8 +234,15 @@
     }
 
     .features_text{
+        text-align: center;
         padding-left: 0px;
     }
+
+    .features_text span{
+        /* text-align: center; */
+        margin: 0px 16px;
+    }
+
     .features_text p{
         font-family: 'Exo 2', sans-serif;
         font-size: 1.8rem;
@@ -244,8 +252,8 @@
     .latestJob_categories{
         display: flex;
         flex-direction: column;
-        margin-left: 1rem;
-
+        justify-content: center;
+        align-items: center;
     }
 
     .latestJob_category{
@@ -289,4 +297,19 @@
     
     }
     
+}
+
+@media (max-width:576px) {
+    .latestJob_categories{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+
+    }
+    .latestJob_category{
+        padding: 12px 25px;
+        margin-bottom: 28px;
+    }
 }

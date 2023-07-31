@@ -6,18 +6,21 @@
 .job_header_details{
     display: flex;
     flex-direction: column;
-    /* margin-left: 4rem; */
-    padding: 0px 4rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 14px;
 }
 
 .job_header_details p{
+    text-align: center;
     font-size: 2.5rem;
     font-weight: bold;
-    
     font-family: 'Exo 2', sans-serif;
 } 
 
 .job_header_details span:nth-child(2) {
+    text-align: center;
     font-family: 'Works Sans' sans-serif;
     font-weight: 400;
     font-size:1.1rem;
@@ -25,15 +28,18 @@
 
 
 .features_categories{
-    display: grid;
-    grid-template-columns: repeat(4,290px);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     margin-top:1.8rem;
-    padding:10px 0rem 0rem 3rem;
+    /* padding:10px 0rem 0rem 3rem; */
 }
 
 .features_category{
     border:1px solid rgba(0,  167, 172, 0.15);
-    width:14.8rem;
+    width:15.2rem;
     padding:20px 16px 16px 16px;
     border-radius: 5px;
     transition: 0.3s;
@@ -43,14 +49,12 @@
 
 .features_header{
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    justify-content: space-between;
+    margin: 0px 24px;
     
 }
 
 .job_link{
-    float: right;
-    margin-left: 28rem;
     margin-top:6rem;
     font-family: 'Exo 2', sans-serif;
 }
@@ -190,3 +194,22 @@
     }
     
 }
+
+@media (max-width:576px){
+    .features_categories{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .features_category{
+        margin-left: 0rem;
+        margin-bottom: 16px;
+        width:19rem;
+        padding:40px 18px 40px 32px;
+    }
+    
+}
+

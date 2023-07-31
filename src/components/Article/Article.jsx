@@ -21,6 +21,7 @@ const Article = () => {
                        <div className='date_article'>
                          <Link to='/date'><span className='date_text'>{article.date}</span></Link>
                        </div>
+                       
                        <div className='comment_article'>
                           <img src={article.iconComment} alt="" />
                           <Link style={{textDecoration:'0'}} to='/'><span className='comment'style={{color:'#595959'}}>{article.comment}</span></Link>
