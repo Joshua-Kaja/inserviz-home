@@ -3,7 +3,6 @@ import './Article.css'
 import { Link } from 'react-router-dom'
 import ExploreLeft from '../Explore/ExploreLeft'
 import { ArticleData } from '../Data/Article'
-
 const Article = () => {
   return (
     <div className='article_container'>
