@@ -31,7 +31,7 @@ const Navbar = ({openSignInPopUp, openSignUpPopUp}) => {
               <div className='nav_top'>
                    <div className='nav_top_details'>
                       <span>Welcome to Inserviz Inc!</span>
-                      <Link style={{textDecoration:0, color:'#00a7ac'}} to='/'><span style={{paddingLeft:'15px'}}>Save Jobs</span></Link>
+                      {/* <Link style={{textDecoration:0, color:'#00a7ac'}} to='/'><span style={{paddingLeft:'15px'}}>Save Jobs</span></Link> */}
                       {/* <span style={{paddingLeft:'15px'}}>Save Jobs</span> */}
                    </div>
                     <div className='social_platform'>

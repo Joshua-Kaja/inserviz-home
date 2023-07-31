@@ -10,6 +10,10 @@ import facebook from '../../assets/facebook-2.svg'
 import twitter from '../../assets/twiter-2.svg'
 import linkedin from '../../assets/linkedin-2.svg'
 import instagram from '../../assets/instagram.svg'
+import {FaFacebookF} from 'react-icons/fa'
+import {FaTwitter} from 'react-icons/fa'
+import {FaLinkedinIn} from 'react-icons/fa'
+import {BsInstagram} from 'react-icons/bs'
 
 const Footer = () => {
   return (
@@ -70,7 +74,7 @@ const Footer = () => {
             <div className='empty' style={{marginBottom:'1.5rem'}}></div>
             <div className='copyright_footer'>
               <span>©Copyright 2023 <span style={{color:'#00a7ac', fontWeight:'500'}}>Inserviz Inc</span>{" "}</span>
-              <span>Design By <span style={{color:'#00a7ac', fontWeight:'500'}}>Inserviz Team</span></span>
+              {/* <span>Design By <span style={{color:'#00a7ac', fontWeight:'500'}}>Inserviz Team</span></span> */}
             </div>
           </div>
           <div className='footer_middle'>
@@ -90,10 +94,11 @@ const Footer = () => {
                <span>Follow Inserviz: </span>
                 <div className='footer_links'>
                   {/* <SocialLinks/> */}
-                  <Link to='/facebook'><img src={facebook} alt=""/></Link>
-                  <Link to='/twitter'><img src={twitter} alt="" /></Link>
-                  <Link to='/linkedIn'><img src={linkedin} alt="" /></Link>
-                  <Link to='/instagram'><img src={instagram} alt="" /></Link>
+                
+                  <Link to='/facebook'><FaFacebookF style={{color:'#fff',paddingLeft:'14px'}}/></Link>
+                  <Link to='/twitter'><FaTwitter style={{color:'#fff', paddingLeft:'14px'}}/></Link>
+                  <Link to='/linkedIn'><FaLinkedinIn style={{color:'#fff',paddingLeft:'14px'}}/></Link>
+                  <Link to='/instagram'><BsInstagram style={{color:'#fff',paddingLeft:'14px'}}/></Link>
                 </div>
               
             </div>

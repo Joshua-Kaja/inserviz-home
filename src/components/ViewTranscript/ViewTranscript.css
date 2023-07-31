@@ -1,13 +1,16 @@
 .view_transcript{
-    background:  rgba(249, 249, 249);
-    padding:8rem 0rem 8rem 9.8rem;
+    /* background:  rgba(249, 249, 249); */
+    padding:6rem 0rem 8rem 2rem;
+    height: 100vh;
+    overflow-y: scroll;
 }
 
 .transcript_container{
     border-top: 5px solid #00a7ac;
     background-color: #fff;
     padding:0px 2rem 4rem 4rem;
-    max-width: 54rem;
+    max-width: 49rem;
+    
     border-radius: 10px;
     border-left: 1px solid rgba(0,167,172,.12);
     border-right: 1px solid rgba(0,167,172,.12);
@@ -16,7 +19,7 @@
 
 .profile_contact{
     display: flex;
-    gap:10rem;
+    gap:5rem;
 }
 
 .profile_item{
