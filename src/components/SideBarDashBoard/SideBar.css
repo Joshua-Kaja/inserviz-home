@@ -36,6 +36,35 @@
     background-color: black;
 }
 
+.logout{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding:1rem;
+    padding-left: 30px;;
+    
+}
+
+.logout:hover{
+    background: #00a7ac;
+    cursor: pointer;
+    transition: 0.3s;
+    
+}
+
+.logout button{
+    border: 0;
+    outline: 0;
+    background: none;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 18px;
+    color: #595959;
+    padding-left: 15px;
+   
+
+
+}
+
 
 @media screen and (max-width:1080px){
     .sideBar_categories{

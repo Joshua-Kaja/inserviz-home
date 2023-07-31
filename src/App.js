@@ -22,17 +22,7 @@ import Settings from './Pages/SettingsDashboard/Settings';
 import Home from './Pages/Home/Home';
 import Dashboard from './Pages/Dashboard/Dashboard';
 import Transcript from './Pages/Transcript';
-// import MyProfileDashBoard from './Pages/MyProfileDashBoard';
-// import CurrrentlyApplied from './Pages/CurrentlyApplied';
-// import AboutUs from './Pages/AboutUs';
-// import Faqs from './Pages/Faqs';
-// import BlogPage from './Pages/BlogPage';
 
-// import BlogSitePage from './Pages/BlogSitePage';
-// import Bookmark from './Pages/BookmarkJobs';
-// import BookmarkJob from './Pages/BookmarkJobs';
-// import Settings from './Pages/SettingsDashboard';
-// import PostJob from './Pages/PostJob';
 
 
 function App() {
@@ -68,7 +58,7 @@ function App() {
     <div className="App">
       <Router>
         <Navbar openSignInPopUp={openSignInPopUp} openSignUpPopUp={openSignUpPopUp}/>
-        {login && <SignInPopUp closePopUp={closePopUp} openSignUpPopUp={openSignUpPopUp} />}
+        {login && <SignInPopUp closePopUp={closePopUp} openSignUpPopUp={openSignUpPopUp}/>}
         {signup && <SignUp closePopUp={closePopUp} openSignInPopUp={openSignInPopUp} />}
         <Routes>
           <Route exact path='/' element={<Home/>}/>

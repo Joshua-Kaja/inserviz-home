@@ -6,8 +6,29 @@ import google from '../../assets/google.png'
 import { Link } from 'react-router-dom'
 
 const SignUp = ({closePopUp, openSignInPopUp}) => {
-  const [initialEmail, setInitialEmail] = useState('');
-  const [inipassword, setIniPassword] = useState('');
+  const [formData, setFormData] = useState({
+    email:'',
+    password:''
+  });
+
+  const handleEmail = (e) => {
+    const {name, value} = e.target;
+    setFormData({
+      ...formData,
+      [name]:value
+    });
+
+  }
+
+  const handleInitialPass = (e) => {
+    const {name, value} = e.target;
+    setFormData({
+      ...formData,
+      [name]:value
+    });
+
+  }
+  
 
   return (
     <div className='signUp'>
@@ -34,14 +55,22 @@ const SignUp = ({closePopUp, openSignInPopUp}) => {
                   <label htmlFor="input_email" >
                     Email
                    </label>
-                  <input style={{fontSize:'16px'}} type="text" name='' id='input_email' value={initialEmail} onChange={(e) => setInitialEmail(e.target.value)}/>
+                  <input style={{fontSize:'16px'}}
+                   type="email"
+                    name='email' 
+                   id='input_email' 
+                   value={formData.email} 
+                   onChange={handleEmail}/>
                 </div>
                 <div className='password_signUp'>
                   <label htmlFor="input_password">
                     Password
                   </label>
                    {/* <div className='password_icon'> */}
-                     <input style={{fontSize:'16px'}} type="password" name='' id='input_password' value={inipassword} onChange={(e) => setIniPassword(e.target.value)}/>
+                     <input style={{fontSize:'16px'}}
+                      type="password" name='password' id='input_password' 
+                      value={formData.password} 
+                      onChange={handleInitialPass}/>
                      {/* <img src="" alt="" /> */}
                    {/* </div> */}
                 </div>

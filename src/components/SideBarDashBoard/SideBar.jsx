@@ -2,13 +2,19 @@ import React, {useState} from 'react'
 import './SideBar.css'
 import { Link } from 'react-router-dom'
 import { SideBarData } from '../../Data/SideBar'
+import logout from '../../assets/logout.svg'
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
-const SideBar = () => {
+
+const SideBar = (args) => {
   const [selectedElement, setSelectedElement] = useState(null);
+  const [modal, setModal] = useState(false);
 
   const handleElementClick = (element) => {
     setSelectedElement(element);
   };
+
+  const toggle = () => setModal(!modal);
 
   return (
     <div className='sideBar'>
@@ -23,6 +29,11 @@ const SideBar = () => {
                 </div>
             </Link>
            ))}
+           <div className='logout'>
+            <img src={logout} alt="" />
+            <button onClick={toggle}>Logout</button>
+           </div>
+           
 
        </div>
 
@@ -33,3 +44,4 @@ const SideBar = () => {
 }
 
 export default SideBar
+
