@@ -2,12 +2,36 @@ import React, { useState } from 'react'
 import './OpenPopUp.css'
 import closeIcon from '../../assets/x.svg'
 import { Link, useAsyncError } from 'react-router-dom'
-import google from '../../assets/google.png'
+import google from '../../assets/google (1).png'
 
 
-const SignInPopUp = ({closePopUp, openSignUpPopUp}) => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+const SignInPopUp = ({closePopUp, openSignUpPopUp, openForgot}) => {
+  // const [email, setEmail] = useState('');
+  // const [password, setPassword] = useState('');
+  const [formDetails, setFormDetails] = useState({
+    email:'',
+    password:'',
+  });
+
+  const handleEmail = (e) => {
+    const {name, value} = e.target;
+    setFormDetails({
+      ...formDetails,
+      [name]:value
+    });
+    
+  }
+
+  const handlePassword = (e) => {
+    const {name, value} = e.target;
+    setFormDetails({
+      ...formDetails,
+      [name]:value
+    });
+    
+  }
+
+  
   const [rememberMe, setRememberMe] = useState(false);
 
 
@@ -17,15 +41,16 @@ const SignInPopUp = ({closePopUp, openSignUpPopUp}) => {
 
   const handleLogin = () => {
     if(rememberMe) {
-      console.log('Login Details: ', email, password);
+      console.log('Login Details: ', formDetails.email, formDetails.password);
     }
   };
   
   return (
     <div className='open_Pop_Up'>
       <div className='login_form'>
+      <img className='close_img' onClick={closePopUp} src={closeIcon} alt="" />
        <div className='close_login_btn'>
-         <button type='button' onClick={closePopUp}><img  src={closeIcon} alt="" /></button>
+         
           <span style={{fontWeight:'bold', fontSize:'20px'}}>Login to inserviz</span>
        </div>
        <form action="">
@@ -33,13 +58,15 @@ const SignInPopUp = ({closePopUp, openSignUpPopUp}) => {
           <label htmlFor="input_email" >
             Email
           </label>
-          <input style={{fontSize:'16px'}} type="text" name='' id='input_email' value={email} onChange={(e)=>setEmail(e.target.value)}/>
+          <input style={{fontSize:'16px'}} type="text" name='email'
+           id='input_email' value={formDetails.email} onChange={handleEmail}/>
         </div>
         <div className='password_login'>
           <label htmlFor="input_password">
             Password
           </label>
-          <input style={{fontSize:'16px'}} type="password" name='' id='input_password' value={password} onChange={(e) => setPassword(e.target.value)}/>
+          <input style={{fontSize:'16px'}} type="password" name='password'
+           id='input_password' value={formDetails.password} onChange={handlePassword}/>
         </div>
         <div className='remember_checked'>
           <div className='checkbox'>
@@ -48,7 +75,7 @@ const SignInPopUp = ({closePopUp, openSignUpPopUp}) => {
               Remember Me
             </label>
             <div className='forgot'>
-              <Link style={{textDecoration:'0', color:'#000'}} to='/forgot'><span className='for_pass' style={{color:'#000'}}>Forgot your password?</span></Link>
+              <span className='for_pass' style={{color:'#000'}} onClick={openForgot}>Forgot your password?</span>
             </div>
           </div>
         </div>

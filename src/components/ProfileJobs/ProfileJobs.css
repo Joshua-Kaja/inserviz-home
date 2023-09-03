@@ -134,23 +134,11 @@
 
 @media screen and (max-width:768px){
     .profile_container{
-        width:13rem;
+        /* width:13rem;
         display: grid;
-        grid-template-columns: repeat(1, 280px);
-    }
-}
-
-@media screen and (max-width:1080px){
-    .profile_Jobs{
-        padding:20px 65px;
-        padding-bottom: 70px;
-    }
-    .profile_container{
-        display:grid;
-        grid-template-columns: repeat(2, 250px);
-
-    }
-    .profile_category{
-        width: 13rem;
+        grid-template-columns: repeat(1, 280px); */
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
     }
 }

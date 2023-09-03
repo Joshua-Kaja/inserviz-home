@@ -2,7 +2,7 @@ export const FaqData = [
     {
         faqKey:'1',
         question:'What is inserviz?',
-        answer:'Inserviz is a multi-sided web and mobile application platform that connects skilled professionals, known as Inprovs, with people or organizations looking for their services, known as Intracts. It is an easy and convenient way to find and hire talented professionals for a wide range of services.',
+        answer:'Inserviz is a multi-sided web and mobile application platform that connects skilled professionals, known as Inprovs, with people or organizations looking for their services, known as Intracts.',
     },
     {
         faqKey:'2',

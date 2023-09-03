@@ -23,6 +23,7 @@ const MyProfile = () => {
     const [qualified, setQualified] = useState('');
     const [lang, setLang] = useState('');
     const [desc, setDesc] = useState('');
+   
     
   return (
     <div className='my_profile'>

@@ -16,16 +16,14 @@
 
 
 .post_header{
-   
     justify-content: center;
-    padding-left: 37rem;
+    /* padding-left: 37rem; */
+    align-items: center;
     background-image: url('../../assets/breadcrumb-bg.png');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     padding: 100px 0px;
-
-    
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -34,6 +32,11 @@
 
 .post_header_okay{
     padding-left: 37rem;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    
 }
 
 .post_header .post_span{
@@ -73,6 +76,7 @@
     border-radius: 10px;
     padding:4rem;
 }
+
 .post_input{
     display: flex;
     flex-direction: row;
@@ -84,9 +88,7 @@
     gap:8px;
 }
 
-/* option{
-    padding:1rem;
-} */
+
 
 .post_txt{
     width: 25rem;
@@ -131,7 +133,8 @@
     outline: none;
     margin-top: 1rem;
     border-radius: 5px;
-    width: 20rem;
+    /* width: 78rem; */
+    width: 92%;
     padding: 1rem;
     border: 1px solid rgba(0, 167, 172, 0.2);
 }
@@ -151,7 +154,6 @@
 
 .post_now button{
     width: 8rem;
-    /* padding:16px 30px 16px 0px; */
     color:white;
     cursor: pointer;
     border-radius: 5px;
@@ -179,3 +181,90 @@
 .post_now:hover{
     background-color: black;
 }
+
+/* Mobile Styles */
+@media screen and (max-width: 768px){
+    .post_header {
+      /* padding-left: 2rem;  */
+      padding: 60px 0px; 
+    }
+  
+    .post_header_okay {
+      padding-left: 14rem;
+    }
+  
+    .post_header .post_span {
+      font-size: 1.2rem; 
+    }
+  
+    .underline {
+      gap: 4px; 
+    }
+  
+    .line {
+      width: 2rem;
+    }
+  
+    .circle {
+      height: 8px; 
+      width: 8px; 
+    }
+  
+    .post_container {
+      margin: 2rem 1rem; 
+      padding: 2rem; 
+    }
+  
+    .post_input {
+     display: flex;
+      flex-direction: row; 
+      width: 92%;
+      margin-top: 8px; 
+    }
+  
+    .post_txt {
+      width: 100%; 
+    }
+  
+    .form_post {
+      grid-template-columns: repeat(1, 1fr); 
+      gap: 1rem;
+    }
+  
+    .text_desc_input {
+      padding-top: 1rem;
+    }
+  
+    .selectPost {
+      width: 100%; 
+      gap: 8px;
+    }
+
+    .post_input img{
+        width: 1rem;
+    }
+  
+    .input_check {
+      flex-direction: row;
+      align-items: center;
+      margin-top: 1.5rem;
+    }
+  
+    .input_check #check {
+      padding-top: 1rem;
+    }
+  
+    .input_check span {
+      padding-left: 8px;
+    }
+
+    .post_now button {
+      width: 100%; 
+    }
+
+    .post_now{
+        width: 92%;
+    }
+    
+  }
+  

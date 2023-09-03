@@ -11,11 +11,14 @@ const Navbar = ({openSignInPopUp, openSignUpPopUp}) => {
     const [selectPost, setSelectedPost] = useState(null);
     const [isOpen, setIsOpen] = useState(false);
 
-    
 
     function handlePostClick(e) {
         e.preventDefault();
         setSelectedPost(selectPost);
+    };
+
+    const  handleNotification = () => {
+        setIsOpen(true);
     };
 
   return (
@@ -23,21 +26,16 @@ const Navbar = ({openSignInPopUp, openSignUpPopUp}) => {
         <div className='nav_container'>
             <div className='img_container'>
               <Link to='/'><img style={{width:'9rem', height:'2rem'}} className="logo_img" src={navImg} alt="" /></Link>
-            
-              {/* <img style={{width:'9rem', height:'2rem'}} className="logo_img" src={navImg} alt="" /> */}
             </div>
-            {/* <div className='navbar_body'> */}
+           
               <div className='top_down_navbar'>
               <div className='nav_top'>
                    <div className='nav_top_details'>
                       <span>Welcome to Inserviz Inc!</span>
-                      {/* <Link style={{textDecoration:0, color:'#00a7ac'}} to='/'><span style={{paddingLeft:'15px'}}>Save Jobs</span></Link> */}
-                      {/* <span style={{paddingLeft:'15px'}}>Save Jobs</span> */}
                    </div>
                     <div className='social_platform'>
                         <SocialLinks/>
                     </div>
-                {/* </div> */}
             </div>
             {/* <div className='navbar_down'> */}
                 <div className='navbar_down_container'>
@@ -49,14 +47,16 @@ const Navbar = ({openSignInPopUp, openSignUpPopUp}) => {
                         <button className='btn_inprov' type="button" onClick={ openSignUpPopUp }>Become an Inprov</button>
                     </div>
                     <div className='navbar_down_right'>
-                        <Link to='/notifications'><img src={notifications} alt="" /></Link>
+                        <img src={notifications} alt="" />
                         <div className='signIn' onClick={ openSignInPopUp }>
                             <img src={personIcon} alt="" />
                             <button type='button' >Sign In</button>
                         </div>
                         <Link className='postJob_btn' to='/post' style={{textDecoration:'none'}}>
                             <button type='button'>Post Job</button>
-                            <img src={post} alt="" />
+                            <span onClick={handleNotification}><img src={post}  alt="" /></span>
+                            
+                            {isOpen && <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quo optio modi ab mollitia, natus minima error molestiae rem fuga pariatur sequi impedit explicabo voluptatem maxime nihil provident facere quis excepturi. Illum quidem atque dolorem repellat doloremque quam cum cumque ullam iure! Quam tempora molestiae rem ipsum deserunt nostrum sit</p>}
                         </Link>
                     </div>
                 </div>

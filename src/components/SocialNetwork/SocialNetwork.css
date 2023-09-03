@@ -39,7 +39,7 @@ label {
     border:1px solid rgba(0, 167, 172, 0.12);
     border-radius: 5px;
     padding:14px;
-    width: 20rem;
+    max-width: 25rem;
     margin-top:13px;
     gap:8px;
 }
@@ -80,3 +80,46 @@ label {
 
 }
 
+@media screen and (max-width: 768px){
+    .socialNetwork {
+        padding: 2rem;
+    }
+
+    .form_social_container {
+        max-width: 100%;
+        margin-top: 1rem;
+    }
+
+    .social_input {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+        margin-left: 4px;
+    }
+
+    .img_input {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .img_input input {
+        min-width: unset;
+        width: 100%;
+        margin-top: 2px;
+    }
+
+    .edit_social {
+        padding: 14px;
+        padding-left: 20px;
+        margin-left: 0;
+        width: 25rem;
+        margin-top: 2rem;
+        margin-left: 1rem;
+    }
+
+    .edit_social button {
+        min-width: unset;
+        width: 100%;
+    }
+}

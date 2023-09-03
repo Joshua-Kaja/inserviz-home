@@ -1,0 +1,94 @@
+.forgot_{
+    top:0;
+    left: 0;
+    background-color: rgb(0,0,0,0.4);
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    font-family: 'Works sans', sans-serif;
+    overflow-x: auto;
+}
+
+.forgot_container_{
+    background-color: #fff;
+    padding: 30px 45px;
+    border: 1px solid rgba(0, 167, 172, 0.5);
+    width: 400px;
+    max-width: 90vw;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.forgot_container_ img{
+    cursor: pointer;
+
+}
+
+.close_img:hover{
+    background-color: rgba(0, 167, 172, 0.15);
+    border-radius: 50%;
+    fill: white;
+    
+
+}
+
+.reset_password{
+    margin-top:0.2rem;
+    margin-bottom: 0.8rem;
+    margin-left: 7rem;
+}
+
+.reset_password span{
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #595959;
+}
+
+::placeholder{
+    font-size: 1.03rem;
+    color: rgba(89, 89, 89,0.5);
+    font-family: 'Works sans', sans-serif;
+}
+
+.email_pass{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.email_pass input{
+    outline: 0;
+    padding: 13px 10px;
+    outline: 0px;
+    border: 1px solid #00a7ac;
+    box-shadow: 0px;
+    transition: box-shadow 500ms;
+    border-radius: 3px;
+    margin-top: 10px;
+    font-family: 'Works sans', sans-serif;
+    font-size: 1rem;
+}
+
+.email_pass input:focus{
+    box-shadow: 0px 0px 3px 2px #00a7ac;
+}
+
+.btn_verify{
+    margin-top:20px;
+    background-color: #00a7ac;
+    border-radius: 5px;
+}
+
+.btn_verify button{
+    width:100%;
+    padding:13px;
+    background:none;
+    outline: 0;
+    border:0;
+    cursor: pointer;
+    font-size:16px;
+}

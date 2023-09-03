@@ -43,6 +43,7 @@ label {
     border:1px solid rgba(0, 167, 172, 0.12);
     border-radius: 5px;
     padding:14px;
+
     width: 20rem;
     margin-top:13px;
     gap:8px;
@@ -51,7 +52,8 @@ label {
 .img_input input{
     outline: none;
     border: none;
-    min-width:19rem;
+    width:19rem;
+    
 
 
 }
@@ -69,7 +71,7 @@ label {
     border:1px solid rgba(0, 167, 172, 0.12);
     border-radius: 5px;
     padding:14px;
-    width: 20.4rem;
+    /* width: 20.4rem; */
     margin-top:13px;
     gap:8px;
 }
@@ -88,7 +90,7 @@ label {
     border:1px solid rgba(0, 167, 172, 0.12);
     border-radius: 5px;
     padding:14px;
-    width: 20.4rem;
+    /* width: 20.4rem; */
     margin-top:13px;
     gap:8px;
 }
@@ -149,4 +151,76 @@ label {
     transition: 0.5s all ease;
 }
 
+.btn_update button{
+    width: 8rem;
+    align-items: center;
+}
 
+@media screen and (max-width: 768px){
+    .my_profile {
+        padding: 2rem;
+    }
+
+    .form_container {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .input_name {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .img_input {
+        /* display: flex;
+        flex-direction: row; */
+        min-width: 90%;
+        margin-top: 1rem;
+        margin-right: 1rem;
+    }
+
+    .img_input input {
+        width: 90%;
+    }
+
+    .qualification_input,
+    .language_input {
+       /* max-width: 25rem; */
+       /* width: 75vw; */
+        margin-top: 1rem;
+    }
+
+    .selectOption {
+        width: 100%;
+    }
+
+    .text_area_btn {
+        padding-left: 1rem;
+    }
+
+    .text_button {
+        margin-top: 1rem;
+    }
+
+    .text_button textarea {
+        min-height: 100px;
+    }
+
+    .btn_update button{
+        width: 100%;
+    }
+
+    .btn_update {
+        padding: 14px;
+        padding-left: 20px;
+        width:75vw;
+        margin-top: 2rem;
+    }
+
+    .btn_update button{
+        width: 100%;
+        min-width: unset;
+        padding-left: 11rem;
+    }
+}

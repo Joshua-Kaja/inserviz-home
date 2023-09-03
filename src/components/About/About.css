@@ -26,3 +26,21 @@
     width: 70%;
     margin-bottom: 3.4rem;
 }
+
+@media screen and (max-width: 768px) {
+    
+    .aboutUs_container span{
+        font-size: 1.7rem;
+        margin-left: 9rem;
+    }
+
+    .aboutUs_container p{
+        color: #160647;
+        font-size: 1.2rem;
+        line-height: 30px;
+        margin-left: 3rem;
+        text-align: center;
+        width: 80%;
+        margin-bottom: 3.4rem;
+    }
+}

@@ -40,3 +40,49 @@
     letter-spacing: 0.3px;
     color:#595959;
 }
+
+@media screen and (max-width: 768px) {
+    .blogSite{
+        background: rgba(249, 249, 249);
+        
+    }
+    
+    .blogSite_container{
+        padding:3rem 2.5rem 3rem 2.5rem;
+        
+    }
+    
+    .blogSite_header span{
+        margin-left: 0rem;
+        width: 90%;
+        font-weight: 600;
+        font-size: 2.1rem;
+    }
+
+    .blogSite_header img{
+        width: 100%;
+    }
+    
+    .blogSite_header p{
+        margin-left: 0rem;
+        padding-left: 4.7rem;
+        font-size: 1.1rem;
+        padding:0px 0px 20px 0px;;
+        
+    }
+    
+    .blogSite_category{
+        padding-top: 1rem;
+    }
+    
+    .blogSite_category h3{
+        font-size: 1.2rem;
+    }
+    
+    .blogSite_category span{
+        letter-spacing: 0.3px;
+    }
+    
+    
+}
+

@@ -65,14 +65,22 @@
 
 }
 
-
-@media screen and (max-width:1080px){
-    .sideBar_categories{
-        width: 32rem;
+@media screen and (max-width: 768px){
+    .sideBar_categories {
+        width: 100%;
+        border-radius: 0;
     }
 
-    .sideBar_category{
-        width:29.13rem;
+    .sideBar_container {
+        padding: 20px;
     }
-    
+
+    .sideBar_category {
+        font-size: 1rem;
+    }
+
+    .logout button {
+        font-size: 16px;
+    }
+
 }

@@ -285,7 +285,7 @@ const AppliedJob = () => {
             {/* medium screen */}
         
 
-            {/* <table className='table2'>
+            <table className='table2'>
                
                 <tbody className='tbody1'>
                     <tr className='tr-md1'>
@@ -705,7 +705,7 @@ const AppliedJob = () => {
                     </tr>
         
                 </tbody>
-            </table> */}
+            </table> 
             </div>
             
         </div>

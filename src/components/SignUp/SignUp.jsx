@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './SignUp.css'
 import closeIcon from '../../assets/x.svg'
 import verifyIcon from '../../assets/captcha.png'
-import google from '../../assets/google.png'
+import google from '../../assets/google (1).png'
 import { Link } from 'react-router-dom'
 
 const SignUp = ({closePopUp, openSignInPopUp}) => {
@@ -33,8 +33,8 @@ const SignUp = ({closePopUp, openSignInPopUp}) => {
   return (
     <div className='signUp'>
         <div className='signUp_container'>
+          <img className="close_img" onClick={closePopUp} src={closeIcon} alt="" />
            <div className='close_btn'>
-             <button type='button' onClick={closePopUp}><img src={closeIcon} alt="" /></button>
              <span>IT'S FREE! View job postings easily with Inserviz</span>
            </div>
 
