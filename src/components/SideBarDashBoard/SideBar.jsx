@@ -32,9 +32,7 @@ const SideBar = (args) => {
            <div className='logout'>
             <img src={logout} alt="" />
             <button onClick={toggle}>Logout</button>
-           </div>
-           
-
+           </div>         
        </div>
 
        </div>

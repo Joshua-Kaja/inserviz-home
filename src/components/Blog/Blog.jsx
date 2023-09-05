@@ -13,7 +13,7 @@ const Blog = () => {
             <div className='blog_header'>
                 <Link to='/blogSite' style={{textDecoration:'none'}}>
                     <div>
-                    <h3>Creating Opportunities for the youth in Gig Economy</h3>
+                    <span>Creating Opportunities for the youth in Gig Economy</span>
                     </div>
                 </Link>
                 <div className='blog_team'>

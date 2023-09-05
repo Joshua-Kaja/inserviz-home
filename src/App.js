@@ -22,6 +22,7 @@ import Settings from './Pages/SettingsDashboard/Settings';
 import Home from './Pages/Home/Home';
 import Dashboard from './Pages/Dashboard/Dashboard';
 import Transcript from './Pages/Transcript';
+import Forgot from './components/ForgotPassword/Forgot';
 
 
 
@@ -29,9 +30,10 @@ function App() {
   const [popUp, setPopUp] = useState({
     login: false,
     signup: false,
+    forgotPass:false
   });
 
-  const {login, signup} = popUp;
+  const {login, signup, forgotPass} = popUp;
 
   const openSignUpPopUp = () => {
     setPopUp({
@@ -46,20 +48,32 @@ function App() {
       ...popUp,
       signup: false,
       login: true,
-    })
+      forgotPass:false
+    });
+  }
+
+  const openForgot = () => {
+    setPopUp({
+      ...popUp,
+      signup:false,
+      login:false,
+      forgotPass:true
+    });
   }
 
   const closePopUp = () => setPopUp({
     singup: false,
     login: false,
-  })
+    forgotPass:false
+  });
 
   return (
     <div className="App">
       <Router>
         <Navbar openSignInPopUp={openSignInPopUp} openSignUpPopUp={openSignUpPopUp}/>
-        {login && <SignInPopUp closePopUp={closePopUp} openSignUpPopUp={openSignUpPopUp}/>}
+        {login && <SignInPopUp closePopUp={closePopUp} openSignUpPopUp={openSignUpPopUp} openForgot={openForgot}/>}
         {signup && <SignUp closePopUp={closePopUp} openSignInPopUp={openSignInPopUp} />}
+        {forgotPass && <Forgot closePopUp={closePopUp}/>}
         <Routes>
           <Route exact path='/' element={<Home/>}/>
         </Routes>

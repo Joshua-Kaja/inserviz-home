@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div className='about'>
         <div className='aboutUs_container'>
-            <span>About Us</span>
+            <span className='text_header'>About Us</span>
             <p>
                 Inserviz is a platform connecting
                 African youth with gig economy opportunities

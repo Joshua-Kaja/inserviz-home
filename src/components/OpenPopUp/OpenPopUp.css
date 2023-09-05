@@ -16,16 +16,22 @@
     background-color: #FFFFFF;
     padding: 30px 45px;
     width: 400px;
+    border: 1px solid rgba(0, 167, 172, 0.5);
     max-width: 90vw;
     border-radius: 10px;
     margin: auto;
 }
 
-.close_login_btn{
-    display: flex;
-    flex-direction: column;
+.login_form img{
+    cursor: pointer;
+  
 }
 
+/* .close_login_btn{
+    display: flex;
+    flex-direction: column;
+} */
+/* 
 .close_login_btn button{
     width: 2rem;
     height: 1.8rem;
@@ -33,7 +39,7 @@
     outline: 0;
     border: 0;
     cursor: pointer;
-}
+} */
 
 .close_login_btn span{
     font-family: 'Exo 2', sans-serif;
@@ -82,8 +88,11 @@
     margin-top:10px;
 }
 
-.forgot .for_pass:hover{
-    color:#00a7ac;
+
+
+.forgot span:hover{
+    color: #00a7ac;
+    cursor: pointer;
 }
 
 .login_btn{

@@ -16,10 +16,17 @@
     background-color: #FFFFFF;
     padding: 30px 45px;
     width: 400px;
+    border: 1px solid rgba(0, 167, 172, 0.5);
     max-width: 90vw;
     border-radius: 10px;
     margin: auto;
 }
+
+.signUp_container img{
+    cursor: pointer;
+}
+
+
 
 
 
@@ -28,14 +35,14 @@
     flex-direction: column;
 }
 
-.close_btn button{
+/* .close_btn button{
     width: 2rem;
     height: 1.8rem;
     background: none;
     outline: 0;
     border: 0;
     cursor: pointer;
-}
+} */
 
 .email_signUp{
     display: flex;

@@ -32,10 +32,10 @@
 }
 
 .faq_answer{
-    padding-top:14px;
+    padding-top:2px;
     color:#595959;
     display: none;
-    /* min-height: 0; */
+
     
 }
 
@@ -57,4 +57,34 @@
 
 }
 
+
+@media screen and (max-width: 768px) {
+    .faq_header{
+        margin-left: 13rem;
+        font-family: 'Exo 2', sans-serif;
+        
+    }
+    .faq_header h2{
+        font-size: 2.2rem;
+    }
+    
+    .faq_categories{
+        width: 95%;
+        margin-left: 1rem;
+    }
+    .faq_title{
+        font-size: 1.089rem;
+        
+    }
+    .faq_answer{
+        padding-top:6px;
+        font-size: 14px;
+        
+    }
+    .faq_category{
+        margin-bottom: 5px;
+        padding: 25px 30px;
+    }
+
+}
 

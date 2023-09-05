@@ -377,3 +377,151 @@
     width: fit-content;
     background: none;
 }
+
+@media screen and (max-width: 768px){
+    .transcript_container {
+        padding: 2rem;
+    }
+
+    .profile_contact {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .profile_item {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .tra_name {
+        text-align: center;
+    }
+
+    .transcript_name span:nth-child(1){
+        font-size: 1.3rem;
+
+    }
+    .transcript_name span:nth-child(2){
+        font-size: 1.2rem;
+
+    }
+
+    .trans_name {
+        font-size: 1.4rem;
+    }
+
+    .trans_job {
+        text-align: center;
+        padding-top: 1rem;
+    }
+
+    .contact_item {
+        padding-top: 1rem;
+        padding-left: 7rem;
+    }
+
+    .num_date {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .professional_item{
+        flex-direction: column;
+    }
+
+    .professional_{  
+        flex-direction: column;
+    }
+
+    .text_profile{
+        display: flex;
+        flex-direction: column;
+        /* margin: 23px; */
+        padding-left: 1rem;
+    }
+
+    .skills{
+        display: flex;
+        gap:14px;
+        padding-top:23px;
+    }
+    
+
+    .special_dev span{
+        font-size: 0.96rem;
+    }
+
+    .profInfo_name_cat {
+        flex-direction: column;
+    }
+
+    .dotted_ {
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .comp_name {
+        padding: 12px 0 0 0;
+        text-align: center;
+    }
+
+    .undeline {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 0.8rem;
+    }
+
+    .comp {
+        text-align: center;
+    }
+
+    .text_profile_name {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .skills {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 1rem;
+    }
+
+    .btn-category {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .btn {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .btn button {
+        margin-top: 0.5rem;
+    }
+
+    .authentication {
+        padding: 1rem 0;
+        text-align: center;
+    }
+
+    .declare,
+    .auth_name,
+    .text_auth {
+        text-align: center;
+    }
+
+    .yours_info {
+        text-align: center;
+    }
+
+    .download_transcript {
+        margin-top: 2rem;
+    }
+}
