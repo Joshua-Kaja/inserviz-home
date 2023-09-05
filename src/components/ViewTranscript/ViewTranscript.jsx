@@ -143,7 +143,7 @@ const ViewTranscript = () => {
                         <span className='special_name'>Special Skills</span>
                         <div className='dotted_line'>.........................................................................................................................................................................................</div>
                    </div>
-                    <span className='job_dev'>Web Development, UI/UX Designer,React Development. </span>
+                    <span className='job_dev'>Web Development,{" "} UI/UX Designer,{" "}React Development. </span>
                 </div>
             </section>
             <div className=''>   
